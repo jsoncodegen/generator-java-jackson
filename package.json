@@ -1,0 +1,33 @@
+{
+	"name": "jsoncodegen-generator-java-jackson",
+	"description": "jsoncodegen JSON to Java code generator for Jackson.",
+	"version": "1.0.0",
+	"author": {
+		"name": "András Parditka"
+	},
+	"license": "MIT",
+	"main": "./dist/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jsoncodegen/generator-java-jackson.git"
+	},
+	"homepage": "https://github.com/jsoncodegen/generator-java-jackson",
+	"bugs": {
+		"url": "https://github.com/jsoncodegen/generator-java-jackson/issues"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.7",
+		"@types/rimraf": "^2.0.3",
+		"jsoncodegen": "^1.0.1",
+		"jsoncodegen-test-json": "^1.0.0",
+		"jsoncodegen-types-for-generator": "^1.0.1",
+		"rimraf": "^3.0.0",
+		"typescript": "^3.7.2"
+	},
+	"scripts": {
+		"compile": "rimraf dist && tsc -p .",
+		"watch": "rimraf dist && tsc -p . -w",
+		"generate": "jsoncodegen -i node_modules/jsoncodegen-test-json/dist -o test-project/src/test/java/jsoncodegen/javajacksontest/generated -g ./dist -c test-project/jsoncodegen.config",
+		"test-output": "cd test-project && mvn-java7 clean test"
+	}
+}
