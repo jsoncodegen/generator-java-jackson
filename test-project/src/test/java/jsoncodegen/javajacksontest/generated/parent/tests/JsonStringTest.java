@@ -16,10 +16,12 @@ public final class JsonStringTest {
 	private final String nameWithDescription;
 	private final String nameOrNull;
 	private final java.util.List<String> arrayOfNames;
+	private final java.util.List<java.util.List<String>> arrayOfArraysOfNames;
 	private final java.util.List<String> arrayOfNamesAndNulls;
 	private final java.util.List<String> arrayOfNamesOrNull;
 	private final java.util.List<String> arrayOfNamesAndNullsOrNull;
 	private final java.util.Map<String, String> mapOfNames;
+	private final java.util.Map<String, java.util.Map<String, String>> mapOfMapsOfNames;
 	private final java.util.Map<String, String> mapOfNullsAndNames;
 	private final java.util.Map<String, String> mapOfNamesOrNull;
 	private final java.util.Map<String, String> mapOfNullsAndNamesOrNull;
@@ -46,13 +48,17 @@ public final class JsonStringTest {
 			JsonStringTest.__OK__,
 			JsonStringTest.__OK__,
 			JsonStringTest.__OK__,
+			JsonStringTest.__OK__,
+			JsonStringTest.__OK__,
 			JsonStringTest.__OK__
 			> builder) {
 		Validate.notNull(builder.name, "Argument 'name' must not be null.");
 		Validate.notNull(builder.nameWithDescription, "Argument 'nameWithDescription' must not be null.");
 		Validate.notNull(builder.arrayOfNames, "Argument 'arrayOfNames' must not be null.");
+		Validate.notNull(builder.arrayOfArraysOfNames, "Argument 'arrayOfArraysOfNames' must not be null.");
 		Validate.notNull(builder.arrayOfNamesAndNulls, "Argument 'arrayOfNamesAndNulls' must not be null.");
 		Validate.notNull(builder.mapOfNames, "Argument 'mapOfNames' must not be null.");
+		Validate.notNull(builder.mapOfMapsOfNames, "Argument 'mapOfMapsOfNames' must not be null.");
 		Validate.notNull(builder.mapOfNullsAndNames, "Argument 'mapOfNullsAndNames' must not be null.");
 		Validate.notNull(builder.arrayOfMapsOfNames, "Argument 'arrayOfMapsOfNames' must not be null.");
 		Validate.notNull(builder.arrayOfNullsAndMapsOfNames, "Argument 'arrayOfNullsAndMapsOfNames' must not be null.");
@@ -64,10 +70,12 @@ public final class JsonStringTest {
 		this.nameWithDescription = builder.nameWithDescription;
 		this.nameOrNull = builder.nameOrNull;
 		this.arrayOfNames = builder.arrayOfNames;
+		this.arrayOfArraysOfNames = builder.arrayOfArraysOfNames;
 		this.arrayOfNamesAndNulls = builder.arrayOfNamesAndNulls;
 		this.arrayOfNamesOrNull = builder.arrayOfNamesOrNull;
 		this.arrayOfNamesAndNullsOrNull = builder.arrayOfNamesAndNullsOrNull;
 		this.mapOfNames = builder.mapOfNames;
+		this.mapOfMapsOfNames = builder.mapOfMapsOfNames;
 		this.mapOfNullsAndNames = builder.mapOfNullsAndNames;
 		this.mapOfNamesOrNull = builder.mapOfNamesOrNull;
 		this.mapOfNullsAndNamesOrNull = builder.mapOfNullsAndNamesOrNull;
@@ -90,10 +98,12 @@ public final class JsonStringTest {
 			.append(this.nameWithDescription)
 			.append(this.nameOrNull)
 			.append(this.arrayOfNames)
+			.append(this.arrayOfArraysOfNames)
 			.append(this.arrayOfNamesAndNulls)
 			.append(this.arrayOfNamesOrNull)
 			.append(this.arrayOfNamesAndNullsOrNull)
 			.append(this.mapOfNames)
+			.append(this.mapOfMapsOfNames)
 			.append(this.mapOfNullsAndNames)
 			.append(this.mapOfNamesOrNull)
 			.append(this.mapOfNullsAndNamesOrNull)
@@ -127,10 +137,12 @@ public final class JsonStringTest {
 			.append(this.nameWithDescription, rhs.nameWithDescription)
 			.append(this.nameOrNull, rhs.nameOrNull)
 			.append(this.arrayOfNames, rhs.arrayOfNames)
+			.append(this.arrayOfArraysOfNames, rhs.arrayOfArraysOfNames)
 			.append(this.arrayOfNamesAndNulls, rhs.arrayOfNamesAndNulls)
 			.append(this.arrayOfNamesOrNull, rhs.arrayOfNamesOrNull)
 			.append(this.arrayOfNamesAndNullsOrNull, rhs.arrayOfNamesAndNullsOrNull)
 			.append(this.mapOfNames, rhs.mapOfNames)
+			.append(this.mapOfMapsOfNames, rhs.mapOfMapsOfNames)
 			.append(this.mapOfNullsAndNames, rhs.mapOfNullsAndNames)
 			.append(this.mapOfNamesOrNull, rhs.mapOfNamesOrNull)
 			.append(this.mapOfNullsAndNamesOrNull, rhs.mapOfNullsAndNamesOrNull)
@@ -154,10 +166,12 @@ public final class JsonStringTest {
 			.append("nameWithDescription", this.nameWithDescription)
 			.append("nameOrNull", this.nameOrNull)
 			.append("arrayOfNames", this.arrayOfNames)
+			.append("arrayOfArraysOfNames", this.arrayOfArraysOfNames)
 			.append("arrayOfNamesAndNulls", this.arrayOfNamesAndNulls)
 			.append("arrayOfNamesOrNull", this.arrayOfNamesOrNull)
 			.append("arrayOfNamesAndNullsOrNull", this.arrayOfNamesAndNullsOrNull)
 			.append("mapOfNames", this.mapOfNames)
+			.append("mapOfMapsOfNames", this.mapOfMapsOfNames)
 			.append("mapOfNullsAndNames", this.mapOfNullsAndNames)
 			.append("mapOfNamesOrNull", this.mapOfNamesOrNull)
 			.append("mapOfNullsAndNamesOrNull", this.mapOfNullsAndNamesOrNull)
@@ -181,10 +195,12 @@ public final class JsonStringTest {
 	public String getNameWithDescription() { return this.nameWithDescription; }
 	public String getNameOrNull() { return this.nameOrNull; }
 	public java.util.List<String> getArrayOfNames() { return this.arrayOfNames; }
+	public java.util.List<java.util.List<String>> getArrayOfArraysOfNames() { return this.arrayOfArraysOfNames; }
 	public java.util.List<String> getArrayOfNamesAndNulls() { return this.arrayOfNamesAndNulls; }
 	public java.util.List<String> getArrayOfNamesOrNull() { return this.arrayOfNamesOrNull; }
 	public java.util.List<String> getArrayOfNamesAndNullsOrNull() { return this.arrayOfNamesAndNullsOrNull; }
 	public java.util.Map<String, String> getMapOfNames() { return this.mapOfNames; }
+	public java.util.Map<String, java.util.Map<String, String>> getMapOfMapsOfNames() { return this.mapOfMapsOfNames; }
 	public java.util.Map<String, String> getMapOfNullsAndNames() { return this.mapOfNullsAndNames; }
 	public java.util.Map<String, String> getMapOfNamesOrNull() { return this.mapOfNamesOrNull; }
 	public java.util.Map<String, String> getMapOfNullsAndNamesOrNull() { return this.mapOfNullsAndNamesOrNull; }
@@ -205,10 +221,12 @@ public final class JsonStringTest {
 			@JsonProperty("nameWithDescription") String nameWithDescription,
 			@JsonProperty("nameOrNull") String nameOrNull,
 			@JsonProperty("arrayOfNames") java.util.List<String> arrayOfNames,
+			@JsonProperty("arrayOfArraysOfNames") java.util.List<java.util.List<String>> arrayOfArraysOfNames,
 			@JsonProperty("arrayOfNamesAndNulls") java.util.List<String> arrayOfNamesAndNulls,
 			@JsonProperty("arrayOfNamesOrNull") java.util.List<String> arrayOfNamesOrNull,
 			@JsonProperty("arrayOfNamesAndNullsOrNull") java.util.List<String> arrayOfNamesAndNullsOrNull,
 			@JsonProperty("mapOfNames") java.util.Map<String, String> mapOfNames,
+			@JsonProperty("mapOfMapsOfNames") java.util.Map<String, java.util.Map<String, String>> mapOfMapsOfNames,
 			@JsonProperty("mapOfNullsAndNames") java.util.Map<String, String> mapOfNullsAndNames,
 			@JsonProperty("mapOfNamesOrNull") java.util.Map<String, String> mapOfNamesOrNull,
 			@JsonProperty("mapOfNullsAndNamesOrNull") java.util.Map<String, String> mapOfNullsAndNamesOrNull,
@@ -228,10 +246,12 @@ public final class JsonStringTest {
 				.withNameWithDescription(nameWithDescription)
 				.withNameOrNull(nameOrNull)
 				.withArrayOfNames(arrayOfNames)
+				.withArrayOfArraysOfNames(arrayOfArraysOfNames)
 				.withArrayOfNamesAndNulls(arrayOfNamesAndNulls)
 				.withArrayOfNamesOrNull(arrayOfNamesOrNull)
 				.withArrayOfNamesAndNullsOrNull(arrayOfNamesAndNullsOrNull)
 				.withMapOfNames(mapOfNames)
+				.withMapOfMapsOfNames(mapOfMapsOfNames)
 				.withMapOfNullsAndNames(mapOfNullsAndNames)
 				.withMapOfNamesOrNull(mapOfNamesOrNull)
 				.withMapOfNullsAndNamesOrNull(mapOfNullsAndNamesOrNull)
@@ -252,8 +272,10 @@ public final class JsonStringTest {
 	private static final class __MISSING_name__ {}
 	private static final class __MISSING_nameWithDescription__ {}
 	private static final class __MISSING_arrayOfNames__ {}
+	private static final class __MISSING_arrayOfArraysOfNames__ {}
 	private static final class __MISSING_arrayOfNamesAndNulls__ {}
 	private static final class __MISSING_mapOfNames__ {}
+	private static final class __MISSING_mapOfMapsOfNames__ {}
 	private static final class __MISSING_mapOfNullsAndNames__ {}
 	private static final class __MISSING_arrayOfMapsOfNames__ {}
 	private static final class __MISSING_arrayOfNullsAndMapsOfNames__ {}
@@ -266,8 +288,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -281,10 +305,12 @@ public final class JsonStringTest {
 		private String nameWithDescription;
 		private String nameOrNull;
 		private java.util.List<String> arrayOfNames;
+		private java.util.List<java.util.List<String>> arrayOfArraysOfNames;
 		private java.util.List<String> arrayOfNamesAndNulls;
 		private java.util.List<String> arrayOfNamesOrNull;
 		private java.util.List<String> arrayOfNamesAndNullsOrNull;
 		private java.util.Map<String, String> mapOfNames;
+		private java.util.Map<String, java.util.Map<String, String>> mapOfMapsOfNames;
 		private java.util.Map<String, String> mapOfNullsAndNames;
 		private java.util.Map<String, String> mapOfNamesOrNull;
 		private java.util.Map<String, String> mapOfNullsAndNamesOrNull;
@@ -305,8 +331,10 @@ public final class JsonStringTest {
 				__MISSING_name__,
 				__MISSING_nameWithDescription__,
 				__MISSING_arrayOfNames__,
+				__MISSING_arrayOfArraysOfNames__,
 				__MISSING_arrayOfNamesAndNulls__,
 				__MISSING_mapOfNames__,
+				__MISSING_mapOfMapsOfNames__,
 				__MISSING_mapOfNullsAndNames__,
 				__MISSING_arrayOfMapsOfNames__,
 				__MISSING_arrayOfNullsAndMapsOfNames__,
@@ -319,8 +347,10 @@ public final class JsonStringTest {
 				__MISSING_name__,
 				__MISSING_nameWithDescription__,
 				__MISSING_arrayOfNames__,
+				__MISSING_arrayOfArraysOfNames__,
 				__MISSING_arrayOfNamesAndNulls__,
 				__MISSING_mapOfNames__,
+				__MISSING_mapOfMapsOfNames__,
 				__MISSING_mapOfNullsAndNames__,
 				__MISSING_arrayOfMapsOfNames__,
 				__MISSING_arrayOfNullsAndMapsOfNames__,
@@ -336,8 +366,10 @@ public final class JsonStringTest {
 				JsonStringTest.__OK__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -351,8 +383,10 @@ public final class JsonStringTest {
 				JsonStringTest.__OK__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -371,8 +405,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				JsonStringTest.__OK__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -386,8 +422,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				JsonStringTest.__OK__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -403,8 +441,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -418,8 +458,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -435,8 +477,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				JsonStringTest.__OK__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -450,8 +494,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				JsonStringTest.__OK__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -468,7 +514,45 @@ public final class JsonStringTest {
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
 				JsonStringTest.__OK__,
+				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
+				__HAS_mapOfNullsAndNames__,
+				__HAS_arrayOfMapsOfNames__,
+				__HAS_arrayOfNullsAndMapsOfNames__,
+				__HAS_arrayOfMapsOfNullsAndNames__,
+				__HAS_mapOfArraysOfNames__,
+				__HAS_mapOfNullsAndArraysOfNames__,
+				__HAS_mapOfArraysOfNullsAndNames__
+				> withArrayOfArraysOfNames(java.util.List<java.util.List<String>> value) {
+			this.arrayOfArraysOfNames = value;
+			return (Builder<
+				__HAS_name__,
+				__HAS_nameWithDescription__,
+				__HAS_arrayOfNames__,
+				JsonStringTest.__OK__,
+				__HAS_arrayOfNamesAndNulls__,
+				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
+				__HAS_mapOfNullsAndNames__,
+				__HAS_arrayOfMapsOfNames__,
+				__HAS_arrayOfNullsAndMapsOfNames__,
+				__HAS_arrayOfMapsOfNullsAndNames__,
+				__HAS_mapOfArraysOfNames__,
+				__HAS_mapOfNullsAndArraysOfNames__,
+				__HAS_mapOfArraysOfNullsAndNames__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_name__,
+				__HAS_nameWithDescription__,
+				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
+				JsonStringTest.__OK__,
+				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -482,8 +566,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				JsonStringTest.__OK__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -499,8 +585,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -514,8 +602,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -531,8 +621,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -546,8 +638,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -563,8 +657,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				JsonStringTest.__OK__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -578,7 +674,45 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
+				JsonStringTest.__OK__,
+				__HAS_mapOfMapsOfNames__,
+				__HAS_mapOfNullsAndNames__,
+				__HAS_arrayOfMapsOfNames__,
+				__HAS_arrayOfNullsAndMapsOfNames__,
+				__HAS_arrayOfMapsOfNullsAndNames__,
+				__HAS_mapOfArraysOfNames__,
+				__HAS_mapOfNullsAndArraysOfNames__,
+				__HAS_mapOfArraysOfNullsAndNames__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_name__,
+				__HAS_nameWithDescription__,
+				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
+				__HAS_arrayOfNamesAndNulls__,
+				__HAS_mapOfNames__,
+				JsonStringTest.__OK__,
+				__HAS_mapOfNullsAndNames__,
+				__HAS_arrayOfMapsOfNames__,
+				__HAS_arrayOfNullsAndMapsOfNames__,
+				__HAS_arrayOfMapsOfNullsAndNames__,
+				__HAS_mapOfArraysOfNames__,
+				__HAS_mapOfNullsAndArraysOfNames__,
+				__HAS_mapOfArraysOfNullsAndNames__
+				> withMapOfMapsOfNames(java.util.Map<String, java.util.Map<String, String>> value) {
+			this.mapOfMapsOfNames = value;
+			return (Builder<
+				__HAS_name__,
+				__HAS_nameWithDescription__,
+				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
+				__HAS_arrayOfNamesAndNulls__,
+				__HAS_mapOfNames__,
 				JsonStringTest.__OK__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
@@ -595,8 +729,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				JsonStringTest.__OK__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -610,8 +746,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				JsonStringTest.__OK__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -627,8 +765,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -642,8 +782,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -659,8 +801,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -674,8 +818,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -691,8 +837,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				JsonStringTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -706,8 +854,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				JsonStringTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -723,8 +873,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -738,8 +890,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -755,8 +909,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				JsonStringTest.__OK__,
@@ -770,8 +926,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				JsonStringTest.__OK__,
@@ -787,8 +945,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -802,8 +962,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -819,8 +981,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -834,8 +998,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -851,8 +1017,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -866,8 +1034,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -883,8 +1053,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -898,8 +1070,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -915,8 +1089,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -930,8 +1106,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -947,8 +1125,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -962,8 +1142,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -979,8 +1161,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,
@@ -994,8 +1178,10 @@ public final class JsonStringTest {
 				__HAS_name__,
 				__HAS_nameWithDescription__,
 				__HAS_arrayOfNames__,
+				__HAS_arrayOfArraysOfNames__,
 				__HAS_arrayOfNamesAndNulls__,
 				__HAS_mapOfNames__,
+				__HAS_mapOfMapsOfNames__,
 				__HAS_mapOfNullsAndNames__,
 				__HAS_arrayOfMapsOfNames__,
 				__HAS_arrayOfNullsAndMapsOfNames__,

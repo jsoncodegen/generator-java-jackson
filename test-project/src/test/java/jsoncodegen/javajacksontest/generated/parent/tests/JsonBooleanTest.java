@@ -16,10 +16,12 @@ public final class JsonBooleanTest {
 	private final Boolean flagWithDescription;
 	private final Boolean flagOrNull;
 	private final java.util.List<Boolean> arrayOfFlags;
+	private final java.util.List<java.util.List<Boolean>> arrayOfArraysOfFlags;
 	private final java.util.List<Boolean> arrayOfFlagsAndNulls;
 	private final java.util.List<Boolean> arrayOfFlagsOrNull;
 	private final java.util.List<Boolean> arrayOfFlagsAndNullsOrNull;
 	private final java.util.Map<String, Boolean> mapOfFlags;
+	private final java.util.Map<String, java.util.Map<String, Boolean>> mapOfMapsOfFlags;
 	private final java.util.Map<String, Boolean> mapOfNullsAndFlags;
 	private final java.util.Map<String, Boolean> mapOfFlagsOrNull;
 	private final java.util.Map<String, Boolean> mapOfNullsAndFlagsOrNull;
@@ -46,13 +48,17 @@ public final class JsonBooleanTest {
 			JsonBooleanTest.__OK__,
 			JsonBooleanTest.__OK__,
 			JsonBooleanTest.__OK__,
+			JsonBooleanTest.__OK__,
+			JsonBooleanTest.__OK__,
 			JsonBooleanTest.__OK__
 			> builder) {
 		Validate.notNull(builder.flag, "Argument 'flag' must not be null.");
 		Validate.notNull(builder.flagWithDescription, "Argument 'flagWithDescription' must not be null.");
 		Validate.notNull(builder.arrayOfFlags, "Argument 'arrayOfFlags' must not be null.");
+		Validate.notNull(builder.arrayOfArraysOfFlags, "Argument 'arrayOfArraysOfFlags' must not be null.");
 		Validate.notNull(builder.arrayOfFlagsAndNulls, "Argument 'arrayOfFlagsAndNulls' must not be null.");
 		Validate.notNull(builder.mapOfFlags, "Argument 'mapOfFlags' must not be null.");
+		Validate.notNull(builder.mapOfMapsOfFlags, "Argument 'mapOfMapsOfFlags' must not be null.");
 		Validate.notNull(builder.mapOfNullsAndFlags, "Argument 'mapOfNullsAndFlags' must not be null.");
 		Validate.notNull(builder.arrayOfMapsOfFlags, "Argument 'arrayOfMapsOfFlags' must not be null.");
 		Validate.notNull(builder.arrayOfNullsAndMapsOfFlags, "Argument 'arrayOfNullsAndMapsOfFlags' must not be null.");
@@ -64,10 +70,12 @@ public final class JsonBooleanTest {
 		this.flagWithDescription = builder.flagWithDescription;
 		this.flagOrNull = builder.flagOrNull;
 		this.arrayOfFlags = builder.arrayOfFlags;
+		this.arrayOfArraysOfFlags = builder.arrayOfArraysOfFlags;
 		this.arrayOfFlagsAndNulls = builder.arrayOfFlagsAndNulls;
 		this.arrayOfFlagsOrNull = builder.arrayOfFlagsOrNull;
 		this.arrayOfFlagsAndNullsOrNull = builder.arrayOfFlagsAndNullsOrNull;
 		this.mapOfFlags = builder.mapOfFlags;
+		this.mapOfMapsOfFlags = builder.mapOfMapsOfFlags;
 		this.mapOfNullsAndFlags = builder.mapOfNullsAndFlags;
 		this.mapOfFlagsOrNull = builder.mapOfFlagsOrNull;
 		this.mapOfNullsAndFlagsOrNull = builder.mapOfNullsAndFlagsOrNull;
@@ -90,10 +98,12 @@ public final class JsonBooleanTest {
 			.append(this.flagWithDescription)
 			.append(this.flagOrNull)
 			.append(this.arrayOfFlags)
+			.append(this.arrayOfArraysOfFlags)
 			.append(this.arrayOfFlagsAndNulls)
 			.append(this.arrayOfFlagsOrNull)
 			.append(this.arrayOfFlagsAndNullsOrNull)
 			.append(this.mapOfFlags)
+			.append(this.mapOfMapsOfFlags)
 			.append(this.mapOfNullsAndFlags)
 			.append(this.mapOfFlagsOrNull)
 			.append(this.mapOfNullsAndFlagsOrNull)
@@ -127,10 +137,12 @@ public final class JsonBooleanTest {
 			.append(this.flagWithDescription, rhs.flagWithDescription)
 			.append(this.flagOrNull, rhs.flagOrNull)
 			.append(this.arrayOfFlags, rhs.arrayOfFlags)
+			.append(this.arrayOfArraysOfFlags, rhs.arrayOfArraysOfFlags)
 			.append(this.arrayOfFlagsAndNulls, rhs.arrayOfFlagsAndNulls)
 			.append(this.arrayOfFlagsOrNull, rhs.arrayOfFlagsOrNull)
 			.append(this.arrayOfFlagsAndNullsOrNull, rhs.arrayOfFlagsAndNullsOrNull)
 			.append(this.mapOfFlags, rhs.mapOfFlags)
+			.append(this.mapOfMapsOfFlags, rhs.mapOfMapsOfFlags)
 			.append(this.mapOfNullsAndFlags, rhs.mapOfNullsAndFlags)
 			.append(this.mapOfFlagsOrNull, rhs.mapOfFlagsOrNull)
 			.append(this.mapOfNullsAndFlagsOrNull, rhs.mapOfNullsAndFlagsOrNull)
@@ -154,10 +166,12 @@ public final class JsonBooleanTest {
 			.append("flagWithDescription", this.flagWithDescription)
 			.append("flagOrNull", this.flagOrNull)
 			.append("arrayOfFlags", this.arrayOfFlags)
+			.append("arrayOfArraysOfFlags", this.arrayOfArraysOfFlags)
 			.append("arrayOfFlagsAndNulls", this.arrayOfFlagsAndNulls)
 			.append("arrayOfFlagsOrNull", this.arrayOfFlagsOrNull)
 			.append("arrayOfFlagsAndNullsOrNull", this.arrayOfFlagsAndNullsOrNull)
 			.append("mapOfFlags", this.mapOfFlags)
+			.append("mapOfMapsOfFlags", this.mapOfMapsOfFlags)
 			.append("mapOfNullsAndFlags", this.mapOfNullsAndFlags)
 			.append("mapOfFlagsOrNull", this.mapOfFlagsOrNull)
 			.append("mapOfNullsAndFlagsOrNull", this.mapOfNullsAndFlagsOrNull)
@@ -181,10 +195,12 @@ public final class JsonBooleanTest {
 	public Boolean getFlagWithDescription() { return this.flagWithDescription; }
 	public Boolean getFlagOrNull() { return this.flagOrNull; }
 	public java.util.List<Boolean> getArrayOfFlags() { return this.arrayOfFlags; }
+	public java.util.List<java.util.List<Boolean>> getArrayOfArraysOfFlags() { return this.arrayOfArraysOfFlags; }
 	public java.util.List<Boolean> getArrayOfFlagsAndNulls() { return this.arrayOfFlagsAndNulls; }
 	public java.util.List<Boolean> getArrayOfFlagsOrNull() { return this.arrayOfFlagsOrNull; }
 	public java.util.List<Boolean> getArrayOfFlagsAndNullsOrNull() { return this.arrayOfFlagsAndNullsOrNull; }
 	public java.util.Map<String, Boolean> getMapOfFlags() { return this.mapOfFlags; }
+	public java.util.Map<String, java.util.Map<String, Boolean>> getMapOfMapsOfFlags() { return this.mapOfMapsOfFlags; }
 	public java.util.Map<String, Boolean> getMapOfNullsAndFlags() { return this.mapOfNullsAndFlags; }
 	public java.util.Map<String, Boolean> getMapOfFlagsOrNull() { return this.mapOfFlagsOrNull; }
 	public java.util.Map<String, Boolean> getMapOfNullsAndFlagsOrNull() { return this.mapOfNullsAndFlagsOrNull; }
@@ -205,10 +221,12 @@ public final class JsonBooleanTest {
 			@JsonProperty("flagWithDescription") Boolean flagWithDescription,
 			@JsonProperty("flagOrNull") Boolean flagOrNull,
 			@JsonProperty("arrayOfFlags") java.util.List<Boolean> arrayOfFlags,
+			@JsonProperty("arrayOfArraysOfFlags") java.util.List<java.util.List<Boolean>> arrayOfArraysOfFlags,
 			@JsonProperty("arrayOfFlagsAndNulls") java.util.List<Boolean> arrayOfFlagsAndNulls,
 			@JsonProperty("arrayOfFlagsOrNull") java.util.List<Boolean> arrayOfFlagsOrNull,
 			@JsonProperty("arrayOfFlagsAndNullsOrNull") java.util.List<Boolean> arrayOfFlagsAndNullsOrNull,
 			@JsonProperty("mapOfFlags") java.util.Map<String, Boolean> mapOfFlags,
+			@JsonProperty("mapOfMapsOfFlags") java.util.Map<String, java.util.Map<String, Boolean>> mapOfMapsOfFlags,
 			@JsonProperty("mapOfNullsAndFlags") java.util.Map<String, Boolean> mapOfNullsAndFlags,
 			@JsonProperty("mapOfFlagsOrNull") java.util.Map<String, Boolean> mapOfFlagsOrNull,
 			@JsonProperty("mapOfNullsAndFlagsOrNull") java.util.Map<String, Boolean> mapOfNullsAndFlagsOrNull,
@@ -228,10 +246,12 @@ public final class JsonBooleanTest {
 				.withFlagWithDescription(flagWithDescription)
 				.withFlagOrNull(flagOrNull)
 				.withArrayOfFlags(arrayOfFlags)
+				.withArrayOfArraysOfFlags(arrayOfArraysOfFlags)
 				.withArrayOfFlagsAndNulls(arrayOfFlagsAndNulls)
 				.withArrayOfFlagsOrNull(arrayOfFlagsOrNull)
 				.withArrayOfFlagsAndNullsOrNull(arrayOfFlagsAndNullsOrNull)
 				.withMapOfFlags(mapOfFlags)
+				.withMapOfMapsOfFlags(mapOfMapsOfFlags)
 				.withMapOfNullsAndFlags(mapOfNullsAndFlags)
 				.withMapOfFlagsOrNull(mapOfFlagsOrNull)
 				.withMapOfNullsAndFlagsOrNull(mapOfNullsAndFlagsOrNull)
@@ -252,8 +272,10 @@ public final class JsonBooleanTest {
 	private static final class __MISSING_flag__ {}
 	private static final class __MISSING_flagWithDescription__ {}
 	private static final class __MISSING_arrayOfFlags__ {}
+	private static final class __MISSING_arrayOfArraysOfFlags__ {}
 	private static final class __MISSING_arrayOfFlagsAndNulls__ {}
 	private static final class __MISSING_mapOfFlags__ {}
+	private static final class __MISSING_mapOfMapsOfFlags__ {}
 	private static final class __MISSING_mapOfNullsAndFlags__ {}
 	private static final class __MISSING_arrayOfMapsOfFlags__ {}
 	private static final class __MISSING_arrayOfNullsAndMapsOfFlags__ {}
@@ -266,8 +288,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -281,10 +305,12 @@ public final class JsonBooleanTest {
 		private Boolean flagWithDescription;
 		private Boolean flagOrNull;
 		private java.util.List<Boolean> arrayOfFlags;
+		private java.util.List<java.util.List<Boolean>> arrayOfArraysOfFlags;
 		private java.util.List<Boolean> arrayOfFlagsAndNulls;
 		private java.util.List<Boolean> arrayOfFlagsOrNull;
 		private java.util.List<Boolean> arrayOfFlagsAndNullsOrNull;
 		private java.util.Map<String, Boolean> mapOfFlags;
+		private java.util.Map<String, java.util.Map<String, Boolean>> mapOfMapsOfFlags;
 		private java.util.Map<String, Boolean> mapOfNullsAndFlags;
 		private java.util.Map<String, Boolean> mapOfFlagsOrNull;
 		private java.util.Map<String, Boolean> mapOfNullsAndFlagsOrNull;
@@ -305,8 +331,10 @@ public final class JsonBooleanTest {
 				__MISSING_flag__,
 				__MISSING_flagWithDescription__,
 				__MISSING_arrayOfFlags__,
+				__MISSING_arrayOfArraysOfFlags__,
 				__MISSING_arrayOfFlagsAndNulls__,
 				__MISSING_mapOfFlags__,
+				__MISSING_mapOfMapsOfFlags__,
 				__MISSING_mapOfNullsAndFlags__,
 				__MISSING_arrayOfMapsOfFlags__,
 				__MISSING_arrayOfNullsAndMapsOfFlags__,
@@ -319,8 +347,10 @@ public final class JsonBooleanTest {
 				__MISSING_flag__,
 				__MISSING_flagWithDescription__,
 				__MISSING_arrayOfFlags__,
+				__MISSING_arrayOfArraysOfFlags__,
 				__MISSING_arrayOfFlagsAndNulls__,
 				__MISSING_mapOfFlags__,
+				__MISSING_mapOfMapsOfFlags__,
 				__MISSING_mapOfNullsAndFlags__,
 				__MISSING_arrayOfMapsOfFlags__,
 				__MISSING_arrayOfNullsAndMapsOfFlags__,
@@ -336,8 +366,10 @@ public final class JsonBooleanTest {
 				JsonBooleanTest.__OK__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -351,8 +383,10 @@ public final class JsonBooleanTest {
 				JsonBooleanTest.__OK__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -371,8 +405,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				JsonBooleanTest.__OK__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -386,8 +422,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				JsonBooleanTest.__OK__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -403,8 +441,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -418,8 +458,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -435,8 +477,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				JsonBooleanTest.__OK__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -450,8 +494,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				JsonBooleanTest.__OK__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -468,7 +514,45 @@ public final class JsonBooleanTest {
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
 				JsonBooleanTest.__OK__,
+				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
+				__HAS_mapOfNullsAndFlags__,
+				__HAS_arrayOfMapsOfFlags__,
+				__HAS_arrayOfNullsAndMapsOfFlags__,
+				__HAS_arrayOfMapsOfNullsAndFlags__,
+				__HAS_mapOfArraysOfFlags__,
+				__HAS_mapOfNullsAndArraysOfFlags__,
+				__HAS_mapOfArraysOfNullsAndFlags__
+				> withArrayOfArraysOfFlags(java.util.List<java.util.List<Boolean>> value) {
+			this.arrayOfArraysOfFlags = value;
+			return (Builder<
+				__HAS_flag__,
+				__HAS_flagWithDescription__,
+				__HAS_arrayOfFlags__,
+				JsonBooleanTest.__OK__,
+				__HAS_arrayOfFlagsAndNulls__,
+				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
+				__HAS_mapOfNullsAndFlags__,
+				__HAS_arrayOfMapsOfFlags__,
+				__HAS_arrayOfNullsAndMapsOfFlags__,
+				__HAS_arrayOfMapsOfNullsAndFlags__,
+				__HAS_mapOfArraysOfFlags__,
+				__HAS_mapOfNullsAndArraysOfFlags__,
+				__HAS_mapOfArraysOfNullsAndFlags__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_flag__,
+				__HAS_flagWithDescription__,
+				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
+				JsonBooleanTest.__OK__,
+				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -482,8 +566,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				JsonBooleanTest.__OK__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -499,8 +585,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -514,8 +602,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -531,8 +621,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -546,8 +638,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -563,8 +657,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				JsonBooleanTest.__OK__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -578,7 +674,45 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
+				JsonBooleanTest.__OK__,
+				__HAS_mapOfMapsOfFlags__,
+				__HAS_mapOfNullsAndFlags__,
+				__HAS_arrayOfMapsOfFlags__,
+				__HAS_arrayOfNullsAndMapsOfFlags__,
+				__HAS_arrayOfMapsOfNullsAndFlags__,
+				__HAS_mapOfArraysOfFlags__,
+				__HAS_mapOfNullsAndArraysOfFlags__,
+				__HAS_mapOfArraysOfNullsAndFlags__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_flag__,
+				__HAS_flagWithDescription__,
+				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
+				__HAS_arrayOfFlagsAndNulls__,
+				__HAS_mapOfFlags__,
+				JsonBooleanTest.__OK__,
+				__HAS_mapOfNullsAndFlags__,
+				__HAS_arrayOfMapsOfFlags__,
+				__HAS_arrayOfNullsAndMapsOfFlags__,
+				__HAS_arrayOfMapsOfNullsAndFlags__,
+				__HAS_mapOfArraysOfFlags__,
+				__HAS_mapOfNullsAndArraysOfFlags__,
+				__HAS_mapOfArraysOfNullsAndFlags__
+				> withMapOfMapsOfFlags(java.util.Map<String, java.util.Map<String, Boolean>> value) {
+			this.mapOfMapsOfFlags = value;
+			return (Builder<
+				__HAS_flag__,
+				__HAS_flagWithDescription__,
+				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
+				__HAS_arrayOfFlagsAndNulls__,
+				__HAS_mapOfFlags__,
 				JsonBooleanTest.__OK__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
@@ -595,8 +729,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				JsonBooleanTest.__OK__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -610,8 +746,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				JsonBooleanTest.__OK__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -627,8 +765,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -642,8 +782,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -659,8 +801,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -674,8 +818,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -691,8 +837,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				JsonBooleanTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -706,8 +854,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				JsonBooleanTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -723,8 +873,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -738,8 +890,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -755,8 +909,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				JsonBooleanTest.__OK__,
@@ -770,8 +926,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				JsonBooleanTest.__OK__,
@@ -787,8 +945,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -802,8 +962,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -819,8 +981,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -834,8 +998,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -851,8 +1017,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -866,8 +1034,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -883,8 +1053,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -898,8 +1070,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -915,8 +1089,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -930,8 +1106,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -947,8 +1125,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -962,8 +1142,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -979,8 +1161,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,
@@ -994,8 +1178,10 @@ public final class JsonBooleanTest {
 				__HAS_flag__,
 				__HAS_flagWithDescription__,
 				__HAS_arrayOfFlags__,
+				__HAS_arrayOfArraysOfFlags__,
 				__HAS_arrayOfFlagsAndNulls__,
 				__HAS_mapOfFlags__,
+				__HAS_mapOfMapsOfFlags__,
 				__HAS_mapOfNullsAndFlags__,
 				__HAS_arrayOfMapsOfFlags__,
 				__HAS_arrayOfNullsAndMapsOfFlags__,

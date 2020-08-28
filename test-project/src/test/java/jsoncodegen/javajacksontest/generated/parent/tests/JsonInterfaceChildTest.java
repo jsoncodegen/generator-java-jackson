@@ -16,10 +16,12 @@ public final class JsonInterfaceChildTest {
 	private final jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface objectWithDescription;
 	private final jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface objectOrNull;
 	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjects;
+	private final java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> arrayOfArraysOfObjects;
 	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsAndNulls;
 	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsOrNull;
 	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsAndNullsOrNull;
 	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfObjects;
+	private final java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> mapOfMapsOfObjects;
 	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfNullsAndObjects;
 	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfObjectsOrNull;
 	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfNullsAndObjectsOrNull;
@@ -46,13 +48,17 @@ public final class JsonInterfaceChildTest {
 			JsonInterfaceChildTest.__OK__,
 			JsonInterfaceChildTest.__OK__,
 			JsonInterfaceChildTest.__OK__,
+			JsonInterfaceChildTest.__OK__,
+			JsonInterfaceChildTest.__OK__,
 			JsonInterfaceChildTest.__OK__
 			> builder) {
 		Validate.notNull(builder.object_, "Argument 'object_' must not be null.");
 		Validate.notNull(builder.objectWithDescription, "Argument 'objectWithDescription' must not be null.");
 		Validate.notNull(builder.arrayOfObjects, "Argument 'arrayOfObjects' must not be null.");
+		Validate.notNull(builder.arrayOfArraysOfObjects, "Argument 'arrayOfArraysOfObjects' must not be null.");
 		Validate.notNull(builder.arrayOfObjectsAndNulls, "Argument 'arrayOfObjectsAndNulls' must not be null.");
 		Validate.notNull(builder.mapOfObjects, "Argument 'mapOfObjects' must not be null.");
+		Validate.notNull(builder.mapOfMapsOfObjects, "Argument 'mapOfMapsOfObjects' must not be null.");
 		Validate.notNull(builder.mapOfNullsAndObjects, "Argument 'mapOfNullsAndObjects' must not be null.");
 		Validate.notNull(builder.arrayOfMapsOfObjects, "Argument 'arrayOfMapsOfObjects' must not be null.");
 		Validate.notNull(builder.arrayOfNullsAndMapsOfObjects, "Argument 'arrayOfNullsAndMapsOfObjects' must not be null.");
@@ -64,10 +70,12 @@ public final class JsonInterfaceChildTest {
 		this.objectWithDescription = builder.objectWithDescription;
 		this.objectOrNull = builder.objectOrNull;
 		this.arrayOfObjects = builder.arrayOfObjects;
+		this.arrayOfArraysOfObjects = builder.arrayOfArraysOfObjects;
 		this.arrayOfObjectsAndNulls = builder.arrayOfObjectsAndNulls;
 		this.arrayOfObjectsOrNull = builder.arrayOfObjectsOrNull;
 		this.arrayOfObjectsAndNullsOrNull = builder.arrayOfObjectsAndNullsOrNull;
 		this.mapOfObjects = builder.mapOfObjects;
+		this.mapOfMapsOfObjects = builder.mapOfMapsOfObjects;
 		this.mapOfNullsAndObjects = builder.mapOfNullsAndObjects;
 		this.mapOfObjectsOrNull = builder.mapOfObjectsOrNull;
 		this.mapOfNullsAndObjectsOrNull = builder.mapOfNullsAndObjectsOrNull;
@@ -90,10 +98,12 @@ public final class JsonInterfaceChildTest {
 			.append(this.objectWithDescription)
 			.append(this.objectOrNull)
 			.append(this.arrayOfObjects)
+			.append(this.arrayOfArraysOfObjects)
 			.append(this.arrayOfObjectsAndNulls)
 			.append(this.arrayOfObjectsOrNull)
 			.append(this.arrayOfObjectsAndNullsOrNull)
 			.append(this.mapOfObjects)
+			.append(this.mapOfMapsOfObjects)
 			.append(this.mapOfNullsAndObjects)
 			.append(this.mapOfObjectsOrNull)
 			.append(this.mapOfNullsAndObjectsOrNull)
@@ -127,10 +137,12 @@ public final class JsonInterfaceChildTest {
 			.append(this.objectWithDescription, rhs.objectWithDescription)
 			.append(this.objectOrNull, rhs.objectOrNull)
 			.append(this.arrayOfObjects, rhs.arrayOfObjects)
+			.append(this.arrayOfArraysOfObjects, rhs.arrayOfArraysOfObjects)
 			.append(this.arrayOfObjectsAndNulls, rhs.arrayOfObjectsAndNulls)
 			.append(this.arrayOfObjectsOrNull, rhs.arrayOfObjectsOrNull)
 			.append(this.arrayOfObjectsAndNullsOrNull, rhs.arrayOfObjectsAndNullsOrNull)
 			.append(this.mapOfObjects, rhs.mapOfObjects)
+			.append(this.mapOfMapsOfObjects, rhs.mapOfMapsOfObjects)
 			.append(this.mapOfNullsAndObjects, rhs.mapOfNullsAndObjects)
 			.append(this.mapOfObjectsOrNull, rhs.mapOfObjectsOrNull)
 			.append(this.mapOfNullsAndObjectsOrNull, rhs.mapOfNullsAndObjectsOrNull)
@@ -154,10 +166,12 @@ public final class JsonInterfaceChildTest {
 			.append("objectWithDescription", this.objectWithDescription)
 			.append("objectOrNull", this.objectOrNull)
 			.append("arrayOfObjects", this.arrayOfObjects)
+			.append("arrayOfArraysOfObjects", this.arrayOfArraysOfObjects)
 			.append("arrayOfObjectsAndNulls", this.arrayOfObjectsAndNulls)
 			.append("arrayOfObjectsOrNull", this.arrayOfObjectsOrNull)
 			.append("arrayOfObjectsAndNullsOrNull", this.arrayOfObjectsAndNullsOrNull)
 			.append("mapOfObjects", this.mapOfObjects)
+			.append("mapOfMapsOfObjects", this.mapOfMapsOfObjects)
 			.append("mapOfNullsAndObjects", this.mapOfNullsAndObjects)
 			.append("mapOfObjectsOrNull", this.mapOfObjectsOrNull)
 			.append("mapOfNullsAndObjectsOrNull", this.mapOfNullsAndObjectsOrNull)
@@ -181,10 +195,12 @@ public final class JsonInterfaceChildTest {
 	public jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface getObjectWithDescription() { return this.objectWithDescription; }
 	public jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface getObjectOrNull() { return this.objectOrNull; }
 	public java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> getArrayOfObjects() { return this.arrayOfObjects; }
+	public java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> getArrayOfArraysOfObjects() { return this.arrayOfArraysOfObjects; }
 	public java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> getArrayOfObjectsAndNulls() { return this.arrayOfObjectsAndNulls; }
 	public java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> getArrayOfObjectsOrNull() { return this.arrayOfObjectsOrNull; }
 	public java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> getArrayOfObjectsAndNullsOrNull() { return this.arrayOfObjectsAndNullsOrNull; }
 	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> getMapOfObjects() { return this.mapOfObjects; }
+	public java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> getMapOfMapsOfObjects() { return this.mapOfMapsOfObjects; }
 	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> getMapOfNullsAndObjects() { return this.mapOfNullsAndObjects; }
 	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> getMapOfObjectsOrNull() { return this.mapOfObjectsOrNull; }
 	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> getMapOfNullsAndObjectsOrNull() { return this.mapOfNullsAndObjectsOrNull; }
@@ -205,10 +221,12 @@ public final class JsonInterfaceChildTest {
 			@JsonProperty("objectWithDescription") jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface objectWithDescription,
 			@JsonProperty("objectOrNull") jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface objectOrNull,
 			@JsonProperty("arrayOfObjects") java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjects,
+			@JsonProperty("arrayOfArraysOfObjects") java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> arrayOfArraysOfObjects,
 			@JsonProperty("arrayOfObjectsAndNulls") java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsAndNulls,
 			@JsonProperty("arrayOfObjectsOrNull") java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsOrNull,
 			@JsonProperty("arrayOfObjectsAndNullsOrNull") java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsAndNullsOrNull,
 			@JsonProperty("mapOfObjects") java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfObjects,
+			@JsonProperty("mapOfMapsOfObjects") java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> mapOfMapsOfObjects,
 			@JsonProperty("mapOfNullsAndObjects") java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfNullsAndObjects,
 			@JsonProperty("mapOfObjectsOrNull") java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfObjectsOrNull,
 			@JsonProperty("mapOfNullsAndObjectsOrNull") java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfNullsAndObjectsOrNull,
@@ -228,10 +246,12 @@ public final class JsonInterfaceChildTest {
 				.withObjectWithDescription(objectWithDescription)
 				.withObjectOrNull(objectOrNull)
 				.withArrayOfObjects(arrayOfObjects)
+				.withArrayOfArraysOfObjects(arrayOfArraysOfObjects)
 				.withArrayOfObjectsAndNulls(arrayOfObjectsAndNulls)
 				.withArrayOfObjectsOrNull(arrayOfObjectsOrNull)
 				.withArrayOfObjectsAndNullsOrNull(arrayOfObjectsAndNullsOrNull)
 				.withMapOfObjects(mapOfObjects)
+				.withMapOfMapsOfObjects(mapOfMapsOfObjects)
 				.withMapOfNullsAndObjects(mapOfNullsAndObjects)
 				.withMapOfObjectsOrNull(mapOfObjectsOrNull)
 				.withMapOfNullsAndObjectsOrNull(mapOfNullsAndObjectsOrNull)
@@ -252,8 +272,10 @@ public final class JsonInterfaceChildTest {
 	private static final class __MISSING_object___ {}
 	private static final class __MISSING_objectWithDescription__ {}
 	private static final class __MISSING_arrayOfObjects__ {}
+	private static final class __MISSING_arrayOfArraysOfObjects__ {}
 	private static final class __MISSING_arrayOfObjectsAndNulls__ {}
 	private static final class __MISSING_mapOfObjects__ {}
+	private static final class __MISSING_mapOfMapsOfObjects__ {}
 	private static final class __MISSING_mapOfNullsAndObjects__ {}
 	private static final class __MISSING_arrayOfMapsOfObjects__ {}
 	private static final class __MISSING_arrayOfNullsAndMapsOfObjects__ {}
@@ -266,8 +288,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -281,10 +305,12 @@ public final class JsonInterfaceChildTest {
 		private jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface objectWithDescription;
 		private jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface objectOrNull;
 		private java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjects;
+		private java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> arrayOfArraysOfObjects;
 		private java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsAndNulls;
 		private java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsOrNull;
 		private java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> arrayOfObjectsAndNullsOrNull;
 		private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfObjects;
+		private java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> mapOfMapsOfObjects;
 		private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfNullsAndObjects;
 		private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfObjectsOrNull;
 		private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface> mapOfNullsAndObjectsOrNull;
@@ -305,8 +331,10 @@ public final class JsonInterfaceChildTest {
 				__MISSING_object___,
 				__MISSING_objectWithDescription__,
 				__MISSING_arrayOfObjects__,
+				__MISSING_arrayOfArraysOfObjects__,
 				__MISSING_arrayOfObjectsAndNulls__,
 				__MISSING_mapOfObjects__,
+				__MISSING_mapOfMapsOfObjects__,
 				__MISSING_mapOfNullsAndObjects__,
 				__MISSING_arrayOfMapsOfObjects__,
 				__MISSING_arrayOfNullsAndMapsOfObjects__,
@@ -319,8 +347,10 @@ public final class JsonInterfaceChildTest {
 				__MISSING_object___,
 				__MISSING_objectWithDescription__,
 				__MISSING_arrayOfObjects__,
+				__MISSING_arrayOfArraysOfObjects__,
 				__MISSING_arrayOfObjectsAndNulls__,
 				__MISSING_mapOfObjects__,
+				__MISSING_mapOfMapsOfObjects__,
 				__MISSING_mapOfNullsAndObjects__,
 				__MISSING_arrayOfMapsOfObjects__,
 				__MISSING_arrayOfNullsAndMapsOfObjects__,
@@ -336,8 +366,10 @@ public final class JsonInterfaceChildTest {
 				JsonInterfaceChildTest.__OK__,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -351,8 +383,10 @@ public final class JsonInterfaceChildTest {
 				JsonInterfaceChildTest.__OK__,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -371,8 +405,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				JsonInterfaceChildTest.__OK__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -386,8 +422,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				JsonInterfaceChildTest.__OK__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -403,8 +441,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -418,8 +458,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -435,8 +477,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				JsonInterfaceChildTest.__OK__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -450,8 +494,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				JsonInterfaceChildTest.__OK__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -468,7 +514,45 @@ public final class JsonInterfaceChildTest {
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
 				JsonInterfaceChildTest.__OK__,
+				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
+				__HAS_mapOfNullsAndObjects__,
+				__HAS_arrayOfMapsOfObjects__,
+				__HAS_arrayOfNullsAndMapsOfObjects__,
+				__HAS_arrayOfMapsOfNullsAndObjects__,
+				__HAS_mapOfArraysOfObjects__,
+				__HAS_mapOfNullsAndArraysOfObjects__,
+				__HAS_mapOfArraysOfNullsAndObjects__
+				> withArrayOfArraysOfObjects(java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> value) {
+			this.arrayOfArraysOfObjects = value;
+			return (Builder<
+				__HAS_object___,
+				__HAS_objectWithDescription__,
+				__HAS_arrayOfObjects__,
+				JsonInterfaceChildTest.__OK__,
+				__HAS_arrayOfObjectsAndNulls__,
+				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
+				__HAS_mapOfNullsAndObjects__,
+				__HAS_arrayOfMapsOfObjects__,
+				__HAS_arrayOfNullsAndMapsOfObjects__,
+				__HAS_arrayOfMapsOfNullsAndObjects__,
+				__HAS_mapOfArraysOfObjects__,
+				__HAS_mapOfNullsAndArraysOfObjects__,
+				__HAS_mapOfArraysOfNullsAndObjects__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_object___,
+				__HAS_objectWithDescription__,
+				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
+				JsonInterfaceChildTest.__OK__,
+				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -482,8 +566,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				JsonInterfaceChildTest.__OK__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -499,8 +585,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -514,8 +602,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -531,8 +621,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -546,8 +638,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -563,8 +657,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				JsonInterfaceChildTest.__OK__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -578,7 +674,45 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
+				JsonInterfaceChildTest.__OK__,
+				__HAS_mapOfMapsOfObjects__,
+				__HAS_mapOfNullsAndObjects__,
+				__HAS_arrayOfMapsOfObjects__,
+				__HAS_arrayOfNullsAndMapsOfObjects__,
+				__HAS_arrayOfMapsOfNullsAndObjects__,
+				__HAS_mapOfArraysOfObjects__,
+				__HAS_mapOfNullsAndArraysOfObjects__,
+				__HAS_mapOfArraysOfNullsAndObjects__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_object___,
+				__HAS_objectWithDescription__,
+				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
+				__HAS_arrayOfObjectsAndNulls__,
+				__HAS_mapOfObjects__,
+				JsonInterfaceChildTest.__OK__,
+				__HAS_mapOfNullsAndObjects__,
+				__HAS_arrayOfMapsOfObjects__,
+				__HAS_arrayOfNullsAndMapsOfObjects__,
+				__HAS_arrayOfMapsOfNullsAndObjects__,
+				__HAS_mapOfArraysOfObjects__,
+				__HAS_mapOfNullsAndArraysOfObjects__,
+				__HAS_mapOfArraysOfNullsAndObjects__
+				> withMapOfMapsOfObjects(java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface>> value) {
+			this.mapOfMapsOfObjects = value;
+			return (Builder<
+				__HAS_object___,
+				__HAS_objectWithDescription__,
+				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
+				__HAS_arrayOfObjectsAndNulls__,
+				__HAS_mapOfObjects__,
 				JsonInterfaceChildTest.__OK__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
@@ -595,8 +729,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				JsonInterfaceChildTest.__OK__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -610,8 +746,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				JsonInterfaceChildTest.__OK__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -627,8 +765,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -642,8 +782,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -659,8 +801,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -674,8 +818,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -691,8 +837,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				JsonInterfaceChildTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -706,8 +854,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				JsonInterfaceChildTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -723,8 +873,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -738,8 +890,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -755,8 +909,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				JsonInterfaceChildTest.__OK__,
@@ -770,8 +926,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				JsonInterfaceChildTest.__OK__,
@@ -787,8 +945,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -802,8 +962,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -819,8 +981,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -834,8 +998,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -851,8 +1017,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -866,8 +1034,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -883,8 +1053,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -898,8 +1070,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -915,8 +1089,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -930,8 +1106,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -947,8 +1125,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -962,8 +1142,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -979,8 +1161,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
@@ -994,8 +1178,10 @@ public final class JsonInterfaceChildTest {
 				__HAS_object___,
 				__HAS_objectWithDescription__,
 				__HAS_arrayOfObjects__,
+				__HAS_arrayOfArraysOfObjects__,
 				__HAS_arrayOfObjectsAndNulls__,
 				__HAS_mapOfObjects__,
+				__HAS_mapOfMapsOfObjects__,
 				__HAS_mapOfNullsAndObjects__,
 				__HAS_arrayOfMapsOfObjects__,
 				__HAS_arrayOfNullsAndMapsOfObjects__,
