@@ -49,6 +49,12 @@ public final class JsonInterface {
 
 			.toString();
 	}
+	
+	public JsonInterface clone() {
+		return new JsonInterface(JsonInterface.Builder.create()
+
+		);
+	}
 
 
 

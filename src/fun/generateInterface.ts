@@ -4,6 +4,9 @@ import { interfaceTemplate } from '../template/interfaceTemplate'
 import { capitalize } from './capitalize'
 import { getBuilderGenerics } from './getBuilderGenerics'
 import { getType } from './getType'
+import { indent } from './indent'
+import { join } from './join'
+import { joinWith } from './joinWith'
 import { makeComment } from './makeComment'
 import { makeFilePath } from './makeFilePath'
 import { makePackageName } from './makePackageName'
@@ -18,7 +21,7 @@ export async function generateInterface({
 	const result: IGeneratorResult[] = []
 	const { fields, directoryPath, name, description } = info
 	const fieldDeclarations = fields
-		.map(field => {
+		.map((field) => {
 			if (reservedKeywords.has(field.name)) {
 				throw new Error(
 					`[q161tl] Reserved keyword cannot be used as identifier in Java: ${
@@ -26,7 +29,7 @@ export async function generateInterface({
 					} (in ${[...directoryPath, name].join('/')})`,
 				)
 			}
-			const declaration = `\tprivate final ${getType(
+			const declaration = `\tprivate ${getType(
 				rootPackageName,
 				field.fieldType,
 			)} ${field.name}${
@@ -43,14 +46,14 @@ export async function generateInterface({
 		})
 		.join(`\n`)
 	const nonFinalFields = fields.filter(
-		field =>
+		(field) =>
 			!(
 				field.fieldType.kind === 'NumberEnumValueReference' ||
 				field.fieldType.kind === 'StringEnumValueReference'
 			) || field.fieldType.isNullable,
 	)
 	const requiredFields = nonFinalFields.filter(
-		field => !field.fieldType.isNullable,
+		(field) => !field.fieldType.isNullable,
 	)
 	const hashAppends = nonFinalFields
 		.map(({ name }) => `\t\t\t.append(this.${name})`)
@@ -59,10 +62,7 @@ export async function generateInterface({
 		.map(({ name }) => `\t\t\t.append(this.${name}, rhs.${name})`)
 		.join(`\n`)
 	const toStringAppends = nonFinalFields
-		.map(
-			({ name }) =>
-				`\t\t\t.append(${JSON.stringify(name)}, this.${name})`,
-		)
+		.map(({ name }) => `\t\t\t.append(${JSON.stringify(name)}, this.${name})`)
 		.join(`\n`)
 	const builderGenericsAllOk = requiredFields.length
 		? `<\n${requiredFields
@@ -80,7 +80,7 @@ export async function generateInterface({
 		.join(`\n`)
 	const jacksonHelperProperties = nonFinalFields
 		.map(
-			field =>
+			(field) =>
 				`\t\t\t@JsonProperty("${field.name}") ${getType(
 					rootPackageName,
 					field.fieldType,
@@ -90,31 +90,61 @@ export async function generateInterface({
 	const builderWithCalls = nonFinalFields
 		.map(({ name }) => `\t\t\t\t.with${capitalize(name)}(${name})`)
 		.join(`\n`)
+	const cloneWithCalls = nonFinalFields
+		.map(({ name }) => `\t\t\t\t.with${capitalize(name)}(this.${name})`)
+		.join(`\n`)
 	const missingClasses = requiredFields
-		.map(
-			({ name }) => `\tprivate static final class __MISSING_${name}__ {}`,
-		)
+		.map(({ name }) => `\tprivate static final class __MISSING_${name}__ {}`)
 		.join(`\n`)
 	const builderGenerics = getBuilderGenerics({
 		interfaceName: name,
 		requiredFields,
 	})
-	const getters = fields
-		.map(field => {
-			const comment = makeComment({
-				text: field.description,
-				indent: '\t',
-			})
-			const declaration = `\tpublic ${getType(
-				rootPackageName,
-				field.fieldType,
-			)} get${capitalize(field.name)}() { return this.${field.name}; }`
-			return [comment, declaration].filter(Boolean).join(`\n`)
+	const gettersAndSetters = fields
+		.map((field) => {
+			return joinWith(`\n\n`)(
+				indent(
+					joinWith(`\n`)(
+						makeComment({
+							text: field.description,
+						}),
+						join(
+							`public `,
+							getType(rootPackageName, field.fieldType),
+							` get${capitalize(field.name)}() {`,
+						),
+						indent(`return this.${field.name};`),
+						`}`,
+					),
+				),
+				indent(
+					joinWith(`\n`)(
+						makeComment({
+							text: field.description,
+						}),
+						join(
+							`public void set`,
+							capitalize(field.name),
+							`(`,
+							getType(rootPackageName, field.fieldType),
+							` value) {`,
+						),
+						indent(
+							joinWith(`\n`)(
+								!field.fieldType.isNullable &&
+									`Validate.notNull(value, "Argument 'value' must not be null.");`,
+								`this.${field.name} = value;`,
+							),
+						),
+						`}`,
+					),
+				),
+			)
 		})
-		.join(`\n`)
+		.join(`\n\n`)
 	const builderFields = nonFinalFields
 		.map(
-			field =>
+			(field) =>
 				`\t\tprivate ${getType(rootPackageName, field.fieldType)} ${
 					field.name
 				};`,
@@ -126,7 +156,7 @@ export async function generateInterface({
 		prefix: 'MISSING',
 	})
 	const builderWithMethods = nonFinalFields
-		.map(field => {
+		.map((field) => {
 			const comment = makeComment({
 				text: field.description,
 				indent: '\t\t',
@@ -138,10 +168,7 @@ export async function generateInterface({
 			})
 			const declaration = `\t\t@SuppressWarnings("unchecked")\n\t\tpublic Builder${builderGenerics} with${capitalize(
 				field.name,
-			)}(${getType(
-				rootPackageName,
-				field.fieldType,
-			)} value) {\n\t\t\tthis.${
+			)}(${getType(rootPackageName, field.fieldType)} value) {\n\t\t\tthis.${
 				field.name
 			} = value;\n\t\t\treturn (Builder${builderGenerics}) this;\n\t\t}`
 			return [comment, declaration].filter(Boolean).join(`\n`)
@@ -166,10 +193,11 @@ export async function generateInterface({
 			builderWithCalls,
 			missingClasses,
 			builderGenerics,
-			getters,
+			gettersAndSetters,
 			builderFields,
 			builderGenericsAllMissing,
 			builderWithMethods,
+			cloneWithCalls,
 		}),
 	})
 	return result

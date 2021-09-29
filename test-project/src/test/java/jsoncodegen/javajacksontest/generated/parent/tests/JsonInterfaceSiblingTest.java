@@ -12,29 +12,29 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public final class JsonInterfaceSiblingTest {
 
-	private final jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface object_;
-	private final jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface objectWithDescription;
-	private final jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface objectOrNull;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> arrayOfObjects;
-	private final java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfArraysOfObjects;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> arrayOfObjectsAndNulls;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> arrayOfObjectsOrNull;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> arrayOfObjectsAndNullsOrNull;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> mapOfObjects;
-	private final java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfMapsOfObjects;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> mapOfNullsAndObjects;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> mapOfObjectsOrNull;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> mapOfNullsAndObjectsOrNull;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfMapsOfObjects;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfMapsOfObjectsOrNull;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfNullsAndMapsOfObjects;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfMapsOfNullsAndObjects;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfNullsAndMapsOfNullsAndObjectsOrNull;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfArraysOfObjects;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfArraysOfObjectsOrNull;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfNullsAndArraysOfObjects;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfArraysOfNullsAndObjects;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfNullsAndArraysOfNullsAndObjectsOrNull;
+	private jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface object_;
+	private jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface objectWithDescription;
+	private jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface objectOrNull;
+	private java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> arrayOfObjects;
+	private java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfArraysOfObjects;
+	private java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> arrayOfObjectsAndNulls;
+	private java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> arrayOfObjectsOrNull;
+	private java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> arrayOfObjectsAndNullsOrNull;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> mapOfObjects;
+	private java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfMapsOfObjects;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> mapOfNullsAndObjects;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> mapOfObjectsOrNull;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> mapOfNullsAndObjectsOrNull;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfMapsOfObjects;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfMapsOfObjectsOrNull;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfNullsAndMapsOfObjects;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfMapsOfNullsAndObjects;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> arrayOfNullsAndMapsOfNullsAndObjectsOrNull;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfArraysOfObjects;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfArraysOfObjectsOrNull;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfNullsAndArraysOfObjects;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfArraysOfNullsAndObjects;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> mapOfNullsAndArraysOfNullsAndObjectsOrNull;
 
 	public JsonInterfaceSiblingTest(Builder<
 			JsonInterfaceSiblingTest.__OK__,
@@ -187,33 +187,238 @@ public final class JsonInterfaceSiblingTest {
 			.append("mapOfNullsAndArraysOfNullsAndObjectsOrNull", this.mapOfNullsAndArraysOfNullsAndObjectsOrNull)
 			.toString();
 	}
+	
+	public JsonInterfaceSiblingTest clone() {
+		return new JsonInterfaceSiblingTest(JsonInterfaceSiblingTest.Builder.create()
+				.withObject_(this.object_)
+				.withObjectWithDescription(this.objectWithDescription)
+				.withObjectOrNull(this.objectOrNull)
+				.withArrayOfObjects(this.arrayOfObjects)
+				.withArrayOfArraysOfObjects(this.arrayOfArraysOfObjects)
+				.withArrayOfObjectsAndNulls(this.arrayOfObjectsAndNulls)
+				.withArrayOfObjectsOrNull(this.arrayOfObjectsOrNull)
+				.withArrayOfObjectsAndNullsOrNull(this.arrayOfObjectsAndNullsOrNull)
+				.withMapOfObjects(this.mapOfObjects)
+				.withMapOfMapsOfObjects(this.mapOfMapsOfObjects)
+				.withMapOfNullsAndObjects(this.mapOfNullsAndObjects)
+				.withMapOfObjectsOrNull(this.mapOfObjectsOrNull)
+				.withMapOfNullsAndObjectsOrNull(this.mapOfNullsAndObjectsOrNull)
+				.withArrayOfMapsOfObjects(this.arrayOfMapsOfObjects)
+				.withArrayOfMapsOfObjectsOrNull(this.arrayOfMapsOfObjectsOrNull)
+				.withArrayOfNullsAndMapsOfObjects(this.arrayOfNullsAndMapsOfObjects)
+				.withArrayOfMapsOfNullsAndObjects(this.arrayOfMapsOfNullsAndObjects)
+				.withArrayOfNullsAndMapsOfNullsAndObjectsOrNull(this.arrayOfNullsAndMapsOfNullsAndObjectsOrNull)
+				.withMapOfArraysOfObjects(this.mapOfArraysOfObjects)
+				.withMapOfArraysOfObjectsOrNull(this.mapOfArraysOfObjectsOrNull)
+				.withMapOfNullsAndArraysOfObjects(this.mapOfNullsAndArraysOfObjects)
+				.withMapOfArraysOfNullsAndObjects(this.mapOfArraysOfNullsAndObjects)
+				.withMapOfNullsAndArraysOfNullsAndObjectsOrNull(this.mapOfNullsAndArraysOfNullsAndObjectsOrNull)
+		);
+	}
 
-	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface getObject_() { return this.object_; }
+	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface getObject_() {
+		return this.object_;
+	}
+
+	public void setObject_(jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.object_ = value;
+	}
+
 	/**
 	 * This is an object.
 	 */
-	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface getObjectWithDescription() { return this.objectWithDescription; }
-	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface getObjectOrNull() { return this.objectOrNull; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getArrayOfObjects() { return this.arrayOfObjects; }
-	public java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfArraysOfObjects() { return this.arrayOfArraysOfObjects; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getArrayOfObjectsAndNulls() { return this.arrayOfObjectsAndNulls; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getArrayOfObjectsOrNull() { return this.arrayOfObjectsOrNull; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getArrayOfObjectsAndNullsOrNull() { return this.arrayOfObjectsAndNullsOrNull; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getMapOfObjects() { return this.mapOfObjects; }
-	public java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfMapsOfObjects() { return this.mapOfMapsOfObjects; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getMapOfNullsAndObjects() { return this.mapOfNullsAndObjects; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getMapOfObjectsOrNull() { return this.mapOfObjectsOrNull; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getMapOfNullsAndObjectsOrNull() { return this.mapOfNullsAndObjectsOrNull; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfMapsOfObjects() { return this.arrayOfMapsOfObjects; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfMapsOfObjectsOrNull() { return this.arrayOfMapsOfObjectsOrNull; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfNullsAndMapsOfObjects() { return this.arrayOfNullsAndMapsOfObjects; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfMapsOfNullsAndObjects() { return this.arrayOfMapsOfNullsAndObjects; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfNullsAndMapsOfNullsAndObjectsOrNull() { return this.arrayOfNullsAndMapsOfNullsAndObjectsOrNull; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfArraysOfObjects() { return this.mapOfArraysOfObjects; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfArraysOfObjectsOrNull() { return this.mapOfArraysOfObjectsOrNull; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfNullsAndArraysOfObjects() { return this.mapOfNullsAndArraysOfObjects; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfArraysOfNullsAndObjects() { return this.mapOfArraysOfNullsAndObjects; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfNullsAndArraysOfNullsAndObjectsOrNull() { return this.mapOfNullsAndArraysOfNullsAndObjectsOrNull; }
+	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface getObjectWithDescription() {
+		return this.objectWithDescription;
+	}
+
+	/**
+	 * This is an object.
+	 */
+	public void setObjectWithDescription(jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.objectWithDescription = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface getObjectOrNull() {
+		return this.objectOrNull;
+	}
+
+	public void setObjectOrNull(jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface value) {
+		this.objectOrNull = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getArrayOfObjects() {
+		return this.arrayOfObjects;
+	}
+
+	public void setArrayOfObjects(java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfObjects = value;
+	}
+
+	public java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfArraysOfObjects() {
+		return this.arrayOfArraysOfObjects;
+	}
+
+	public void setArrayOfArraysOfObjects(java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfArraysOfObjects = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getArrayOfObjectsAndNulls() {
+		return this.arrayOfObjectsAndNulls;
+	}
+
+	public void setArrayOfObjectsAndNulls(java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfObjectsAndNulls = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getArrayOfObjectsOrNull() {
+		return this.arrayOfObjectsOrNull;
+	}
+
+	public void setArrayOfObjectsOrNull(java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> value) {
+		this.arrayOfObjectsOrNull = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getArrayOfObjectsAndNullsOrNull() {
+		return this.arrayOfObjectsAndNullsOrNull;
+	}
+
+	public void setArrayOfObjectsAndNullsOrNull(java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> value) {
+		this.arrayOfObjectsAndNullsOrNull = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getMapOfObjects() {
+		return this.mapOfObjects;
+	}
+
+	public void setMapOfObjects(java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfObjects = value;
+	}
+
+	public java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfMapsOfObjects() {
+		return this.mapOfMapsOfObjects;
+	}
+
+	public void setMapOfMapsOfObjects(java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfMapsOfObjects = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getMapOfNullsAndObjects() {
+		return this.mapOfNullsAndObjects;
+	}
+
+	public void setMapOfNullsAndObjects(java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndObjects = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getMapOfObjectsOrNull() {
+		return this.mapOfObjectsOrNull;
+	}
+
+	public void setMapOfObjectsOrNull(java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> value) {
+		this.mapOfObjectsOrNull = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> getMapOfNullsAndObjectsOrNull() {
+		return this.mapOfNullsAndObjectsOrNull;
+	}
+
+	public void setMapOfNullsAndObjectsOrNull(java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface> value) {
+		this.mapOfNullsAndObjectsOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfMapsOfObjects() {
+		return this.arrayOfMapsOfObjects;
+	}
+
+	public void setArrayOfMapsOfObjects(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfObjects = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfMapsOfObjectsOrNull() {
+		return this.arrayOfMapsOfObjectsOrNull;
+	}
+
+	public void setArrayOfMapsOfObjectsOrNull(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		this.arrayOfMapsOfObjectsOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfNullsAndMapsOfObjects() {
+		return this.arrayOfNullsAndMapsOfObjects;
+	}
+
+	public void setArrayOfNullsAndMapsOfObjects(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfNullsAndMapsOfObjects = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfMapsOfNullsAndObjects() {
+		return this.arrayOfMapsOfNullsAndObjects;
+	}
+
+	public void setArrayOfMapsOfNullsAndObjects(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfNullsAndObjects = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getArrayOfNullsAndMapsOfNullsAndObjectsOrNull() {
+		return this.arrayOfNullsAndMapsOfNullsAndObjectsOrNull;
+	}
+
+	public void setArrayOfNullsAndMapsOfNullsAndObjectsOrNull(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		this.arrayOfNullsAndMapsOfNullsAndObjectsOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfArraysOfObjects() {
+		return this.mapOfArraysOfObjects;
+	}
+
+	public void setMapOfArraysOfObjects(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfObjects = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfArraysOfObjectsOrNull() {
+		return this.mapOfArraysOfObjectsOrNull;
+	}
+
+	public void setMapOfArraysOfObjectsOrNull(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		this.mapOfArraysOfObjectsOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfNullsAndArraysOfObjects() {
+		return this.mapOfNullsAndArraysOfObjects;
+	}
+
+	public void setMapOfNullsAndArraysOfObjects(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndArraysOfObjects = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfArraysOfNullsAndObjects() {
+		return this.mapOfArraysOfNullsAndObjects;
+	}
+
+	public void setMapOfArraysOfNullsAndObjects(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfNullsAndObjects = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> getMapOfNullsAndArraysOfNullsAndObjectsOrNull() {
+		return this.mapOfNullsAndArraysOfNullsAndObjectsOrNull;
+	}
+
+	public void setMapOfNullsAndArraysOfNullsAndObjectsOrNull(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface>> value) {
+		this.mapOfNullsAndArraysOfNullsAndObjectsOrNull = value;
+	}
 
 	@JsonCreator
 	public static JsonInterfaceSiblingTest jacksonHelper(

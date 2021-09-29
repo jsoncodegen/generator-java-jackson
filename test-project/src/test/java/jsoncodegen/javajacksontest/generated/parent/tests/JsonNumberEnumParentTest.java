@@ -12,29 +12,29 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public final class JsonNumberEnumParentTest {
 
-	private final jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum enum_;
-	private final jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum enumWithDescription;
-	private final jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum enumOrNull;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> arrayOfEnums;
-	private final java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfArraysOfEnums;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> arrayOfEnumsAndNulls;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> arrayOfEnumsOrNull;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> arrayOfEnumsAndNullsOrNull;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> mapOfEnums;
-	private final java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfMapsOfEnums;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> mapOfNullsAndEnums;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> mapOfEnumsOrNull;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> mapOfNullsAndEnumsOrNull;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfMapsOfEnums;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfMapsOfEnumsOrNull;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfNullsAndMapsOfEnums;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfMapsOfNullsAndEnums;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfNullsAndMapsOfNullsAndEnumsOrNull;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfArraysOfEnums;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfArraysOfEnumsOrNull;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfNullsAndArraysOfEnums;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfArraysOfNullsAndEnums;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfNullsAndArraysOfNullsAndEnumsOrNull;
+	private jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum enum_;
+	private jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum enumWithDescription;
+	private jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum enumOrNull;
+	private java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> arrayOfEnums;
+	private java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfArraysOfEnums;
+	private java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> arrayOfEnumsAndNulls;
+	private java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> arrayOfEnumsOrNull;
+	private java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> arrayOfEnumsAndNullsOrNull;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> mapOfEnums;
+	private java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfMapsOfEnums;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> mapOfNullsAndEnums;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> mapOfEnumsOrNull;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> mapOfNullsAndEnumsOrNull;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfMapsOfEnums;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfMapsOfEnumsOrNull;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfNullsAndMapsOfEnums;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfMapsOfNullsAndEnums;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> arrayOfNullsAndMapsOfNullsAndEnumsOrNull;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfArraysOfEnums;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfArraysOfEnumsOrNull;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfNullsAndArraysOfEnums;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfArraysOfNullsAndEnums;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> mapOfNullsAndArraysOfNullsAndEnumsOrNull;
 
 	public JsonNumberEnumParentTest(Builder<
 			JsonNumberEnumParentTest.__OK__,
@@ -187,33 +187,238 @@ public final class JsonNumberEnumParentTest {
 			.append("mapOfNullsAndArraysOfNullsAndEnumsOrNull", this.mapOfNullsAndArraysOfNullsAndEnumsOrNull)
 			.toString();
 	}
+	
+	public JsonNumberEnumParentTest clone() {
+		return new JsonNumberEnumParentTest(JsonNumberEnumParentTest.Builder.create()
+				.withEnum_(this.enum_)
+				.withEnumWithDescription(this.enumWithDescription)
+				.withEnumOrNull(this.enumOrNull)
+				.withArrayOfEnums(this.arrayOfEnums)
+				.withArrayOfArraysOfEnums(this.arrayOfArraysOfEnums)
+				.withArrayOfEnumsAndNulls(this.arrayOfEnumsAndNulls)
+				.withArrayOfEnumsOrNull(this.arrayOfEnumsOrNull)
+				.withArrayOfEnumsAndNullsOrNull(this.arrayOfEnumsAndNullsOrNull)
+				.withMapOfEnums(this.mapOfEnums)
+				.withMapOfMapsOfEnums(this.mapOfMapsOfEnums)
+				.withMapOfNullsAndEnums(this.mapOfNullsAndEnums)
+				.withMapOfEnumsOrNull(this.mapOfEnumsOrNull)
+				.withMapOfNullsAndEnumsOrNull(this.mapOfNullsAndEnumsOrNull)
+				.withArrayOfMapsOfEnums(this.arrayOfMapsOfEnums)
+				.withArrayOfMapsOfEnumsOrNull(this.arrayOfMapsOfEnumsOrNull)
+				.withArrayOfNullsAndMapsOfEnums(this.arrayOfNullsAndMapsOfEnums)
+				.withArrayOfMapsOfNullsAndEnums(this.arrayOfMapsOfNullsAndEnums)
+				.withArrayOfNullsAndMapsOfNullsAndEnumsOrNull(this.arrayOfNullsAndMapsOfNullsAndEnumsOrNull)
+				.withMapOfArraysOfEnums(this.mapOfArraysOfEnums)
+				.withMapOfArraysOfEnumsOrNull(this.mapOfArraysOfEnumsOrNull)
+				.withMapOfNullsAndArraysOfEnums(this.mapOfNullsAndArraysOfEnums)
+				.withMapOfArraysOfNullsAndEnums(this.mapOfArraysOfNullsAndEnums)
+				.withMapOfNullsAndArraysOfNullsAndEnumsOrNull(this.mapOfNullsAndArraysOfNullsAndEnumsOrNull)
+		);
+	}
 
-	public jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum getEnum_() { return this.enum_; }
+	public jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum getEnum_() {
+		return this.enum_;
+	}
+
+	public void setEnum_(jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.enum_ = value;
+	}
+
 	/**
 	 * This is an enum.
 	 */
-	public jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum getEnumWithDescription() { return this.enumWithDescription; }
-	public jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum getEnumOrNull() { return this.enumOrNull; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getArrayOfEnums() { return this.arrayOfEnums; }
-	public java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfArraysOfEnums() { return this.arrayOfArraysOfEnums; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getArrayOfEnumsAndNulls() { return this.arrayOfEnumsAndNulls; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getArrayOfEnumsOrNull() { return this.arrayOfEnumsOrNull; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getArrayOfEnumsAndNullsOrNull() { return this.arrayOfEnumsAndNullsOrNull; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getMapOfEnums() { return this.mapOfEnums; }
-	public java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfMapsOfEnums() { return this.mapOfMapsOfEnums; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getMapOfNullsAndEnums() { return this.mapOfNullsAndEnums; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getMapOfEnumsOrNull() { return this.mapOfEnumsOrNull; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getMapOfNullsAndEnumsOrNull() { return this.mapOfNullsAndEnumsOrNull; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfMapsOfEnums() { return this.arrayOfMapsOfEnums; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfMapsOfEnumsOrNull() { return this.arrayOfMapsOfEnumsOrNull; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfNullsAndMapsOfEnums() { return this.arrayOfNullsAndMapsOfEnums; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfMapsOfNullsAndEnums() { return this.arrayOfMapsOfNullsAndEnums; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfNullsAndMapsOfNullsAndEnumsOrNull() { return this.arrayOfNullsAndMapsOfNullsAndEnumsOrNull; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfArraysOfEnums() { return this.mapOfArraysOfEnums; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfArraysOfEnumsOrNull() { return this.mapOfArraysOfEnumsOrNull; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfNullsAndArraysOfEnums() { return this.mapOfNullsAndArraysOfEnums; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfArraysOfNullsAndEnums() { return this.mapOfArraysOfNullsAndEnums; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfNullsAndArraysOfNullsAndEnumsOrNull() { return this.mapOfNullsAndArraysOfNullsAndEnumsOrNull; }
+	public jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum getEnumWithDescription() {
+		return this.enumWithDescription;
+	}
+
+	/**
+	 * This is an enum.
+	 */
+	public void setEnumWithDescription(jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.enumWithDescription = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum getEnumOrNull() {
+		return this.enumOrNull;
+	}
+
+	public void setEnumOrNull(jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum value) {
+		this.enumOrNull = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getArrayOfEnums() {
+		return this.arrayOfEnums;
+	}
+
+	public void setArrayOfEnums(java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfEnums = value;
+	}
+
+	public java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfArraysOfEnums() {
+		return this.arrayOfArraysOfEnums;
+	}
+
+	public void setArrayOfArraysOfEnums(java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfArraysOfEnums = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getArrayOfEnumsAndNulls() {
+		return this.arrayOfEnumsAndNulls;
+	}
+
+	public void setArrayOfEnumsAndNulls(java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfEnumsAndNulls = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getArrayOfEnumsOrNull() {
+		return this.arrayOfEnumsOrNull;
+	}
+
+	public void setArrayOfEnumsOrNull(java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> value) {
+		this.arrayOfEnumsOrNull = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getArrayOfEnumsAndNullsOrNull() {
+		return this.arrayOfEnumsAndNullsOrNull;
+	}
+
+	public void setArrayOfEnumsAndNullsOrNull(java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> value) {
+		this.arrayOfEnumsAndNullsOrNull = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getMapOfEnums() {
+		return this.mapOfEnums;
+	}
+
+	public void setMapOfEnums(java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfEnums = value;
+	}
+
+	public java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfMapsOfEnums() {
+		return this.mapOfMapsOfEnums;
+	}
+
+	public void setMapOfMapsOfEnums(java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfMapsOfEnums = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getMapOfNullsAndEnums() {
+		return this.mapOfNullsAndEnums;
+	}
+
+	public void setMapOfNullsAndEnums(java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndEnums = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getMapOfEnumsOrNull() {
+		return this.mapOfEnumsOrNull;
+	}
+
+	public void setMapOfEnumsOrNull(java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> value) {
+		this.mapOfEnumsOrNull = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> getMapOfNullsAndEnumsOrNull() {
+		return this.mapOfNullsAndEnumsOrNull;
+	}
+
+	public void setMapOfNullsAndEnumsOrNull(java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum> value) {
+		this.mapOfNullsAndEnumsOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfMapsOfEnums() {
+		return this.arrayOfMapsOfEnums;
+	}
+
+	public void setArrayOfMapsOfEnums(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfEnums = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfMapsOfEnumsOrNull() {
+		return this.arrayOfMapsOfEnumsOrNull;
+	}
+
+	public void setArrayOfMapsOfEnumsOrNull(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		this.arrayOfMapsOfEnumsOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfNullsAndMapsOfEnums() {
+		return this.arrayOfNullsAndMapsOfEnums;
+	}
+
+	public void setArrayOfNullsAndMapsOfEnums(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfNullsAndMapsOfEnums = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfMapsOfNullsAndEnums() {
+		return this.arrayOfMapsOfNullsAndEnums;
+	}
+
+	public void setArrayOfMapsOfNullsAndEnums(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfNullsAndEnums = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getArrayOfNullsAndMapsOfNullsAndEnumsOrNull() {
+		return this.arrayOfNullsAndMapsOfNullsAndEnumsOrNull;
+	}
+
+	public void setArrayOfNullsAndMapsOfNullsAndEnumsOrNull(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		this.arrayOfNullsAndMapsOfNullsAndEnumsOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfArraysOfEnums() {
+		return this.mapOfArraysOfEnums;
+	}
+
+	public void setMapOfArraysOfEnums(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfEnums = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfArraysOfEnumsOrNull() {
+		return this.mapOfArraysOfEnumsOrNull;
+	}
+
+	public void setMapOfArraysOfEnumsOrNull(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		this.mapOfArraysOfEnumsOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfNullsAndArraysOfEnums() {
+		return this.mapOfNullsAndArraysOfEnums;
+	}
+
+	public void setMapOfNullsAndArraysOfEnums(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndArraysOfEnums = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfArraysOfNullsAndEnums() {
+		return this.mapOfArraysOfNullsAndEnums;
+	}
+
+	public void setMapOfArraysOfNullsAndEnums(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfNullsAndEnums = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> getMapOfNullsAndArraysOfNullsAndEnumsOrNull() {
+		return this.mapOfNullsAndArraysOfNullsAndEnumsOrNull;
+	}
+
+	public void setMapOfNullsAndArraysOfNullsAndEnumsOrNull(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum>> value) {
+		this.mapOfNullsAndArraysOfNullsAndEnumsOrNull = value;
+	}
 
 	@JsonCreator
 	public static JsonNumberEnumParentTest jacksonHelper(

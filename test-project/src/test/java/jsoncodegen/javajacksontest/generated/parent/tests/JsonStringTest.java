@@ -12,29 +12,29 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public final class JsonStringTest {
 
-	private final String name;
-	private final String nameWithDescription;
-	private final String nameOrNull;
-	private final java.util.List<String> arrayOfNames;
-	private final java.util.List<java.util.List<String>> arrayOfArraysOfNames;
-	private final java.util.List<String> arrayOfNamesAndNulls;
-	private final java.util.List<String> arrayOfNamesOrNull;
-	private final java.util.List<String> arrayOfNamesAndNullsOrNull;
-	private final java.util.Map<String, String> mapOfNames;
-	private final java.util.Map<String, java.util.Map<String, String>> mapOfMapsOfNames;
-	private final java.util.Map<String, String> mapOfNullsAndNames;
-	private final java.util.Map<String, String> mapOfNamesOrNull;
-	private final java.util.Map<String, String> mapOfNullsAndNamesOrNull;
-	private final java.util.List<java.util.Map<String, String>> arrayOfMapsOfNames;
-	private final java.util.List<java.util.Map<String, String>> arrayOfMapsOfNamesOrNull;
-	private final java.util.List<java.util.Map<String, String>> arrayOfNullsAndMapsOfNames;
-	private final java.util.List<java.util.Map<String, String>> arrayOfMapsOfNullsAndNames;
-	private final java.util.List<java.util.Map<String, String>> arrayOfNullsAndMapsOfNullsAndNamesOrNull;
-	private final java.util.Map<String, java.util.List<String>> mapOfArraysOfNames;
-	private final java.util.Map<String, java.util.List<String>> mapOfArraysOfNamesOrNull;
-	private final java.util.Map<String, java.util.List<String>> mapOfNullsAndArraysOfNames;
-	private final java.util.Map<String, java.util.List<String>> mapOfArraysOfNullsAndNames;
-	private final java.util.Map<String, java.util.List<String>> mapOfNullsAndArraysOfNullsAndNamesOrNull;
+	private String name;
+	private String nameWithDescription;
+	private String nameOrNull;
+	private java.util.List<String> arrayOfNames;
+	private java.util.List<java.util.List<String>> arrayOfArraysOfNames;
+	private java.util.List<String> arrayOfNamesAndNulls;
+	private java.util.List<String> arrayOfNamesOrNull;
+	private java.util.List<String> arrayOfNamesAndNullsOrNull;
+	private java.util.Map<String, String> mapOfNames;
+	private java.util.Map<String, java.util.Map<String, String>> mapOfMapsOfNames;
+	private java.util.Map<String, String> mapOfNullsAndNames;
+	private java.util.Map<String, String> mapOfNamesOrNull;
+	private java.util.Map<String, String> mapOfNullsAndNamesOrNull;
+	private java.util.List<java.util.Map<String, String>> arrayOfMapsOfNames;
+	private java.util.List<java.util.Map<String, String>> arrayOfMapsOfNamesOrNull;
+	private java.util.List<java.util.Map<String, String>> arrayOfNullsAndMapsOfNames;
+	private java.util.List<java.util.Map<String, String>> arrayOfMapsOfNullsAndNames;
+	private java.util.List<java.util.Map<String, String>> arrayOfNullsAndMapsOfNullsAndNamesOrNull;
+	private java.util.Map<String, java.util.List<String>> mapOfArraysOfNames;
+	private java.util.Map<String, java.util.List<String>> mapOfArraysOfNamesOrNull;
+	private java.util.Map<String, java.util.List<String>> mapOfNullsAndArraysOfNames;
+	private java.util.Map<String, java.util.List<String>> mapOfArraysOfNullsAndNames;
+	private java.util.Map<String, java.util.List<String>> mapOfNullsAndArraysOfNullsAndNamesOrNull;
 
 	public JsonStringTest(Builder<
 			JsonStringTest.__OK__,
@@ -187,33 +187,238 @@ public final class JsonStringTest {
 			.append("mapOfNullsAndArraysOfNullsAndNamesOrNull", this.mapOfNullsAndArraysOfNullsAndNamesOrNull)
 			.toString();
 	}
+	
+	public JsonStringTest clone() {
+		return new JsonStringTest(JsonStringTest.Builder.create()
+				.withName(this.name)
+				.withNameWithDescription(this.nameWithDescription)
+				.withNameOrNull(this.nameOrNull)
+				.withArrayOfNames(this.arrayOfNames)
+				.withArrayOfArraysOfNames(this.arrayOfArraysOfNames)
+				.withArrayOfNamesAndNulls(this.arrayOfNamesAndNulls)
+				.withArrayOfNamesOrNull(this.arrayOfNamesOrNull)
+				.withArrayOfNamesAndNullsOrNull(this.arrayOfNamesAndNullsOrNull)
+				.withMapOfNames(this.mapOfNames)
+				.withMapOfMapsOfNames(this.mapOfMapsOfNames)
+				.withMapOfNullsAndNames(this.mapOfNullsAndNames)
+				.withMapOfNamesOrNull(this.mapOfNamesOrNull)
+				.withMapOfNullsAndNamesOrNull(this.mapOfNullsAndNamesOrNull)
+				.withArrayOfMapsOfNames(this.arrayOfMapsOfNames)
+				.withArrayOfMapsOfNamesOrNull(this.arrayOfMapsOfNamesOrNull)
+				.withArrayOfNullsAndMapsOfNames(this.arrayOfNullsAndMapsOfNames)
+				.withArrayOfMapsOfNullsAndNames(this.arrayOfMapsOfNullsAndNames)
+				.withArrayOfNullsAndMapsOfNullsAndNamesOrNull(this.arrayOfNullsAndMapsOfNullsAndNamesOrNull)
+				.withMapOfArraysOfNames(this.mapOfArraysOfNames)
+				.withMapOfArraysOfNamesOrNull(this.mapOfArraysOfNamesOrNull)
+				.withMapOfNullsAndArraysOfNames(this.mapOfNullsAndArraysOfNames)
+				.withMapOfArraysOfNullsAndNames(this.mapOfArraysOfNullsAndNames)
+				.withMapOfNullsAndArraysOfNullsAndNamesOrNull(this.mapOfNullsAndArraysOfNullsAndNamesOrNull)
+		);
+	}
 
-	public String getName() { return this.name; }
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.name = value;
+	}
+
 	/**
 	 * This is a name.
 	 */
-	public String getNameWithDescription() { return this.nameWithDescription; }
-	public String getNameOrNull() { return this.nameOrNull; }
-	public java.util.List<String> getArrayOfNames() { return this.arrayOfNames; }
-	public java.util.List<java.util.List<String>> getArrayOfArraysOfNames() { return this.arrayOfArraysOfNames; }
-	public java.util.List<String> getArrayOfNamesAndNulls() { return this.arrayOfNamesAndNulls; }
-	public java.util.List<String> getArrayOfNamesOrNull() { return this.arrayOfNamesOrNull; }
-	public java.util.List<String> getArrayOfNamesAndNullsOrNull() { return this.arrayOfNamesAndNullsOrNull; }
-	public java.util.Map<String, String> getMapOfNames() { return this.mapOfNames; }
-	public java.util.Map<String, java.util.Map<String, String>> getMapOfMapsOfNames() { return this.mapOfMapsOfNames; }
-	public java.util.Map<String, String> getMapOfNullsAndNames() { return this.mapOfNullsAndNames; }
-	public java.util.Map<String, String> getMapOfNamesOrNull() { return this.mapOfNamesOrNull; }
-	public java.util.Map<String, String> getMapOfNullsAndNamesOrNull() { return this.mapOfNullsAndNamesOrNull; }
-	public java.util.List<java.util.Map<String, String>> getArrayOfMapsOfNames() { return this.arrayOfMapsOfNames; }
-	public java.util.List<java.util.Map<String, String>> getArrayOfMapsOfNamesOrNull() { return this.arrayOfMapsOfNamesOrNull; }
-	public java.util.List<java.util.Map<String, String>> getArrayOfNullsAndMapsOfNames() { return this.arrayOfNullsAndMapsOfNames; }
-	public java.util.List<java.util.Map<String, String>> getArrayOfMapsOfNullsAndNames() { return this.arrayOfMapsOfNullsAndNames; }
-	public java.util.List<java.util.Map<String, String>> getArrayOfNullsAndMapsOfNullsAndNamesOrNull() { return this.arrayOfNullsAndMapsOfNullsAndNamesOrNull; }
-	public java.util.Map<String, java.util.List<String>> getMapOfArraysOfNames() { return this.mapOfArraysOfNames; }
-	public java.util.Map<String, java.util.List<String>> getMapOfArraysOfNamesOrNull() { return this.mapOfArraysOfNamesOrNull; }
-	public java.util.Map<String, java.util.List<String>> getMapOfNullsAndArraysOfNames() { return this.mapOfNullsAndArraysOfNames; }
-	public java.util.Map<String, java.util.List<String>> getMapOfArraysOfNullsAndNames() { return this.mapOfArraysOfNullsAndNames; }
-	public java.util.Map<String, java.util.List<String>> getMapOfNullsAndArraysOfNullsAndNamesOrNull() { return this.mapOfNullsAndArraysOfNullsAndNamesOrNull; }
+	public String getNameWithDescription() {
+		return this.nameWithDescription;
+	}
+
+	/**
+	 * This is a name.
+	 */
+	public void setNameWithDescription(String value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.nameWithDescription = value;
+	}
+
+	public String getNameOrNull() {
+		return this.nameOrNull;
+	}
+
+	public void setNameOrNull(String value) {
+		this.nameOrNull = value;
+	}
+
+	public java.util.List<String> getArrayOfNames() {
+		return this.arrayOfNames;
+	}
+
+	public void setArrayOfNames(java.util.List<String> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfNames = value;
+	}
+
+	public java.util.List<java.util.List<String>> getArrayOfArraysOfNames() {
+		return this.arrayOfArraysOfNames;
+	}
+
+	public void setArrayOfArraysOfNames(java.util.List<java.util.List<String>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfArraysOfNames = value;
+	}
+
+	public java.util.List<String> getArrayOfNamesAndNulls() {
+		return this.arrayOfNamesAndNulls;
+	}
+
+	public void setArrayOfNamesAndNulls(java.util.List<String> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfNamesAndNulls = value;
+	}
+
+	public java.util.List<String> getArrayOfNamesOrNull() {
+		return this.arrayOfNamesOrNull;
+	}
+
+	public void setArrayOfNamesOrNull(java.util.List<String> value) {
+		this.arrayOfNamesOrNull = value;
+	}
+
+	public java.util.List<String> getArrayOfNamesAndNullsOrNull() {
+		return this.arrayOfNamesAndNullsOrNull;
+	}
+
+	public void setArrayOfNamesAndNullsOrNull(java.util.List<String> value) {
+		this.arrayOfNamesAndNullsOrNull = value;
+	}
+
+	public java.util.Map<String, String> getMapOfNames() {
+		return this.mapOfNames;
+	}
+
+	public void setMapOfNames(java.util.Map<String, String> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNames = value;
+	}
+
+	public java.util.Map<String, java.util.Map<String, String>> getMapOfMapsOfNames() {
+		return this.mapOfMapsOfNames;
+	}
+
+	public void setMapOfMapsOfNames(java.util.Map<String, java.util.Map<String, String>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfMapsOfNames = value;
+	}
+
+	public java.util.Map<String, String> getMapOfNullsAndNames() {
+		return this.mapOfNullsAndNames;
+	}
+
+	public void setMapOfNullsAndNames(java.util.Map<String, String> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndNames = value;
+	}
+
+	public java.util.Map<String, String> getMapOfNamesOrNull() {
+		return this.mapOfNamesOrNull;
+	}
+
+	public void setMapOfNamesOrNull(java.util.Map<String, String> value) {
+		this.mapOfNamesOrNull = value;
+	}
+
+	public java.util.Map<String, String> getMapOfNullsAndNamesOrNull() {
+		return this.mapOfNullsAndNamesOrNull;
+	}
+
+	public void setMapOfNullsAndNamesOrNull(java.util.Map<String, String> value) {
+		this.mapOfNullsAndNamesOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, String>> getArrayOfMapsOfNames() {
+		return this.arrayOfMapsOfNames;
+	}
+
+	public void setArrayOfMapsOfNames(java.util.List<java.util.Map<String, String>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfNames = value;
+	}
+
+	public java.util.List<java.util.Map<String, String>> getArrayOfMapsOfNamesOrNull() {
+		return this.arrayOfMapsOfNamesOrNull;
+	}
+
+	public void setArrayOfMapsOfNamesOrNull(java.util.List<java.util.Map<String, String>> value) {
+		this.arrayOfMapsOfNamesOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, String>> getArrayOfNullsAndMapsOfNames() {
+		return this.arrayOfNullsAndMapsOfNames;
+	}
+
+	public void setArrayOfNullsAndMapsOfNames(java.util.List<java.util.Map<String, String>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfNullsAndMapsOfNames = value;
+	}
+
+	public java.util.List<java.util.Map<String, String>> getArrayOfMapsOfNullsAndNames() {
+		return this.arrayOfMapsOfNullsAndNames;
+	}
+
+	public void setArrayOfMapsOfNullsAndNames(java.util.List<java.util.Map<String, String>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfNullsAndNames = value;
+	}
+
+	public java.util.List<java.util.Map<String, String>> getArrayOfNullsAndMapsOfNullsAndNamesOrNull() {
+		return this.arrayOfNullsAndMapsOfNullsAndNamesOrNull;
+	}
+
+	public void setArrayOfNullsAndMapsOfNullsAndNamesOrNull(java.util.List<java.util.Map<String, String>> value) {
+		this.arrayOfNullsAndMapsOfNullsAndNamesOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<String>> getMapOfArraysOfNames() {
+		return this.mapOfArraysOfNames;
+	}
+
+	public void setMapOfArraysOfNames(java.util.Map<String, java.util.List<String>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfNames = value;
+	}
+
+	public java.util.Map<String, java.util.List<String>> getMapOfArraysOfNamesOrNull() {
+		return this.mapOfArraysOfNamesOrNull;
+	}
+
+	public void setMapOfArraysOfNamesOrNull(java.util.Map<String, java.util.List<String>> value) {
+		this.mapOfArraysOfNamesOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<String>> getMapOfNullsAndArraysOfNames() {
+		return this.mapOfNullsAndArraysOfNames;
+	}
+
+	public void setMapOfNullsAndArraysOfNames(java.util.Map<String, java.util.List<String>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndArraysOfNames = value;
+	}
+
+	public java.util.Map<String, java.util.List<String>> getMapOfArraysOfNullsAndNames() {
+		return this.mapOfArraysOfNullsAndNames;
+	}
+
+	public void setMapOfArraysOfNullsAndNames(java.util.Map<String, java.util.List<String>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfNullsAndNames = value;
+	}
+
+	public java.util.Map<String, java.util.List<String>> getMapOfNullsAndArraysOfNullsAndNamesOrNull() {
+		return this.mapOfNullsAndArraysOfNullsAndNamesOrNull;
+	}
+
+	public void setMapOfNullsAndArraysOfNullsAndNamesOrNull(java.util.Map<String, java.util.List<String>> value) {
+		this.mapOfNullsAndArraysOfNullsAndNamesOrNull = value;
+	}
 
 	@JsonCreator
 	public static JsonStringTest jacksonHelper(
