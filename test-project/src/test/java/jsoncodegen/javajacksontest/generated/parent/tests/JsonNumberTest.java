@@ -12,29 +12,33 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public final class JsonNumberTest {
 
-	private final Double count;
-	private final Double countWithDescription;
-	private final Double countOrNull;
-	private final java.util.List<Double> arrayOfCounts;
-	private final java.util.List<Double> arrayOfCountsAndNulls;
-	private final java.util.List<Double> arrayOfCountsOrNull;
-	private final java.util.List<Double> arrayOfCountsAndNullsOrNull;
-	private final java.util.Map<String, Double> mapOfCounts;
-	private final java.util.Map<String, Double> mapOfNullsAndCounts;
-	private final java.util.Map<String, Double> mapOfCountsOrNull;
-	private final java.util.Map<String, Double> mapOfNullsAndCountsOrNull;
-	private final java.util.List<java.util.Map<String, Double>> arrayOfMapsOfCounts;
-	private final java.util.List<java.util.Map<String, Double>> arrayOfMapsOfCountsOrNull;
-	private final java.util.List<java.util.Map<String, Double>> arrayOfNullsAndMapsOfCounts;
-	private final java.util.List<java.util.Map<String, Double>> arrayOfMapsOfNullsAndCounts;
-	private final java.util.List<java.util.Map<String, Double>> arrayOfNullsAndMapsOfNullsAndCountsOrNull;
-	private final java.util.Map<String, java.util.List<Double>> mapOfArraysOfCounts;
-	private final java.util.Map<String, java.util.List<Double>> mapOfArraysOfCountsOrNull;
-	private final java.util.Map<String, java.util.List<Double>> mapOfNullsAndArraysOfCounts;
-	private final java.util.Map<String, java.util.List<Double>> mapOfArraysOfNullsAndCounts;
-	private final java.util.Map<String, java.util.List<Double>> mapOfNullsAndArraysOfNullsAndCountsOrNull;
+	private Double count;
+	private Double countWithDescription;
+	private Double countOrNull;
+	private java.util.List<Double> arrayOfCounts;
+	private java.util.List<java.util.List<Double>> arrayOfArraysOfCounts;
+	private java.util.List<Double> arrayOfCountsAndNulls;
+	private java.util.List<Double> arrayOfCountsOrNull;
+	private java.util.List<Double> arrayOfCountsAndNullsOrNull;
+	private java.util.Map<String, Double> mapOfCounts;
+	private java.util.Map<String, java.util.Map<String, Double>> mapOfMapsOfCounts;
+	private java.util.Map<String, Double> mapOfNullsAndCounts;
+	private java.util.Map<String, Double> mapOfCountsOrNull;
+	private java.util.Map<String, Double> mapOfNullsAndCountsOrNull;
+	private java.util.List<java.util.Map<String, Double>> arrayOfMapsOfCounts;
+	private java.util.List<java.util.Map<String, Double>> arrayOfMapsOfCountsOrNull;
+	private java.util.List<java.util.Map<String, Double>> arrayOfNullsAndMapsOfCounts;
+	private java.util.List<java.util.Map<String, Double>> arrayOfMapsOfNullsAndCounts;
+	private java.util.List<java.util.Map<String, Double>> arrayOfNullsAndMapsOfNullsAndCountsOrNull;
+	private java.util.Map<String, java.util.List<Double>> mapOfArraysOfCounts;
+	private java.util.Map<String, java.util.List<Double>> mapOfArraysOfCountsOrNull;
+	private java.util.Map<String, java.util.List<Double>> mapOfNullsAndArraysOfCounts;
+	private java.util.Map<String, java.util.List<Double>> mapOfArraysOfNullsAndCounts;
+	private java.util.Map<String, java.util.List<Double>> mapOfNullsAndArraysOfNullsAndCountsOrNull;
 
 	public JsonNumberTest(Builder<
+			JsonNumberTest.__OK__,
+			JsonNumberTest.__OK__,
 			JsonNumberTest.__OK__,
 			JsonNumberTest.__OK__,
 			JsonNumberTest.__OK__,
@@ -51,8 +55,10 @@ public final class JsonNumberTest {
 		Validate.notNull(builder.count, "Argument 'count' must not be null.");
 		Validate.notNull(builder.countWithDescription, "Argument 'countWithDescription' must not be null.");
 		Validate.notNull(builder.arrayOfCounts, "Argument 'arrayOfCounts' must not be null.");
+		Validate.notNull(builder.arrayOfArraysOfCounts, "Argument 'arrayOfArraysOfCounts' must not be null.");
 		Validate.notNull(builder.arrayOfCountsAndNulls, "Argument 'arrayOfCountsAndNulls' must not be null.");
 		Validate.notNull(builder.mapOfCounts, "Argument 'mapOfCounts' must not be null.");
+		Validate.notNull(builder.mapOfMapsOfCounts, "Argument 'mapOfMapsOfCounts' must not be null.");
 		Validate.notNull(builder.mapOfNullsAndCounts, "Argument 'mapOfNullsAndCounts' must not be null.");
 		Validate.notNull(builder.arrayOfMapsOfCounts, "Argument 'arrayOfMapsOfCounts' must not be null.");
 		Validate.notNull(builder.arrayOfNullsAndMapsOfCounts, "Argument 'arrayOfNullsAndMapsOfCounts' must not be null.");
@@ -64,10 +70,12 @@ public final class JsonNumberTest {
 		this.countWithDescription = builder.countWithDescription;
 		this.countOrNull = builder.countOrNull;
 		this.arrayOfCounts = builder.arrayOfCounts;
+		this.arrayOfArraysOfCounts = builder.arrayOfArraysOfCounts;
 		this.arrayOfCountsAndNulls = builder.arrayOfCountsAndNulls;
 		this.arrayOfCountsOrNull = builder.arrayOfCountsOrNull;
 		this.arrayOfCountsAndNullsOrNull = builder.arrayOfCountsAndNullsOrNull;
 		this.mapOfCounts = builder.mapOfCounts;
+		this.mapOfMapsOfCounts = builder.mapOfMapsOfCounts;
 		this.mapOfNullsAndCounts = builder.mapOfNullsAndCounts;
 		this.mapOfCountsOrNull = builder.mapOfCountsOrNull;
 		this.mapOfNullsAndCountsOrNull = builder.mapOfNullsAndCountsOrNull;
@@ -90,10 +98,12 @@ public final class JsonNumberTest {
 			.append(this.countWithDescription)
 			.append(this.countOrNull)
 			.append(this.arrayOfCounts)
+			.append(this.arrayOfArraysOfCounts)
 			.append(this.arrayOfCountsAndNulls)
 			.append(this.arrayOfCountsOrNull)
 			.append(this.arrayOfCountsAndNullsOrNull)
 			.append(this.mapOfCounts)
+			.append(this.mapOfMapsOfCounts)
 			.append(this.mapOfNullsAndCounts)
 			.append(this.mapOfCountsOrNull)
 			.append(this.mapOfNullsAndCountsOrNull)
@@ -127,10 +137,12 @@ public final class JsonNumberTest {
 			.append(this.countWithDescription, rhs.countWithDescription)
 			.append(this.countOrNull, rhs.countOrNull)
 			.append(this.arrayOfCounts, rhs.arrayOfCounts)
+			.append(this.arrayOfArraysOfCounts, rhs.arrayOfArraysOfCounts)
 			.append(this.arrayOfCountsAndNulls, rhs.arrayOfCountsAndNulls)
 			.append(this.arrayOfCountsOrNull, rhs.arrayOfCountsOrNull)
 			.append(this.arrayOfCountsAndNullsOrNull, rhs.arrayOfCountsAndNullsOrNull)
 			.append(this.mapOfCounts, rhs.mapOfCounts)
+			.append(this.mapOfMapsOfCounts, rhs.mapOfMapsOfCounts)
 			.append(this.mapOfNullsAndCounts, rhs.mapOfNullsAndCounts)
 			.append(this.mapOfCountsOrNull, rhs.mapOfCountsOrNull)
 			.append(this.mapOfNullsAndCountsOrNull, rhs.mapOfNullsAndCountsOrNull)
@@ -154,10 +166,12 @@ public final class JsonNumberTest {
 			.append("countWithDescription", this.countWithDescription)
 			.append("countOrNull", this.countOrNull)
 			.append("arrayOfCounts", this.arrayOfCounts)
+			.append("arrayOfArraysOfCounts", this.arrayOfArraysOfCounts)
 			.append("arrayOfCountsAndNulls", this.arrayOfCountsAndNulls)
 			.append("arrayOfCountsOrNull", this.arrayOfCountsOrNull)
 			.append("arrayOfCountsAndNullsOrNull", this.arrayOfCountsAndNullsOrNull)
 			.append("mapOfCounts", this.mapOfCounts)
+			.append("mapOfMapsOfCounts", this.mapOfMapsOfCounts)
 			.append("mapOfNullsAndCounts", this.mapOfNullsAndCounts)
 			.append("mapOfCountsOrNull", this.mapOfCountsOrNull)
 			.append("mapOfNullsAndCountsOrNull", this.mapOfNullsAndCountsOrNull)
@@ -173,31 +187,238 @@ public final class JsonNumberTest {
 			.append("mapOfNullsAndArraysOfNullsAndCountsOrNull", this.mapOfNullsAndArraysOfNullsAndCountsOrNull)
 			.toString();
 	}
+	
+	public JsonNumberTest clone() {
+		return new JsonNumberTest(JsonNumberTest.Builder.create()
+				.withCount(this.count)
+				.withCountWithDescription(this.countWithDescription)
+				.withCountOrNull(this.countOrNull)
+				.withArrayOfCounts(this.arrayOfCounts)
+				.withArrayOfArraysOfCounts(this.arrayOfArraysOfCounts)
+				.withArrayOfCountsAndNulls(this.arrayOfCountsAndNulls)
+				.withArrayOfCountsOrNull(this.arrayOfCountsOrNull)
+				.withArrayOfCountsAndNullsOrNull(this.arrayOfCountsAndNullsOrNull)
+				.withMapOfCounts(this.mapOfCounts)
+				.withMapOfMapsOfCounts(this.mapOfMapsOfCounts)
+				.withMapOfNullsAndCounts(this.mapOfNullsAndCounts)
+				.withMapOfCountsOrNull(this.mapOfCountsOrNull)
+				.withMapOfNullsAndCountsOrNull(this.mapOfNullsAndCountsOrNull)
+				.withArrayOfMapsOfCounts(this.arrayOfMapsOfCounts)
+				.withArrayOfMapsOfCountsOrNull(this.arrayOfMapsOfCountsOrNull)
+				.withArrayOfNullsAndMapsOfCounts(this.arrayOfNullsAndMapsOfCounts)
+				.withArrayOfMapsOfNullsAndCounts(this.arrayOfMapsOfNullsAndCounts)
+				.withArrayOfNullsAndMapsOfNullsAndCountsOrNull(this.arrayOfNullsAndMapsOfNullsAndCountsOrNull)
+				.withMapOfArraysOfCounts(this.mapOfArraysOfCounts)
+				.withMapOfArraysOfCountsOrNull(this.mapOfArraysOfCountsOrNull)
+				.withMapOfNullsAndArraysOfCounts(this.mapOfNullsAndArraysOfCounts)
+				.withMapOfArraysOfNullsAndCounts(this.mapOfArraysOfNullsAndCounts)
+				.withMapOfNullsAndArraysOfNullsAndCountsOrNull(this.mapOfNullsAndArraysOfNullsAndCountsOrNull)
+		);
+	}
 
-	public Double getCount() { return this.count; }
+	public Double getCount() {
+		return this.count;
+	}
+
+	public void setCount(Double value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.count = value;
+	}
+
 	/**
 	 * This is a count.
 	 */
-	public Double getCountWithDescription() { return this.countWithDescription; }
-	public Double getCountOrNull() { return this.countOrNull; }
-	public java.util.List<Double> getArrayOfCounts() { return this.arrayOfCounts; }
-	public java.util.List<Double> getArrayOfCountsAndNulls() { return this.arrayOfCountsAndNulls; }
-	public java.util.List<Double> getArrayOfCountsOrNull() { return this.arrayOfCountsOrNull; }
-	public java.util.List<Double> getArrayOfCountsAndNullsOrNull() { return this.arrayOfCountsAndNullsOrNull; }
-	public java.util.Map<String, Double> getMapOfCounts() { return this.mapOfCounts; }
-	public java.util.Map<String, Double> getMapOfNullsAndCounts() { return this.mapOfNullsAndCounts; }
-	public java.util.Map<String, Double> getMapOfCountsOrNull() { return this.mapOfCountsOrNull; }
-	public java.util.Map<String, Double> getMapOfNullsAndCountsOrNull() { return this.mapOfNullsAndCountsOrNull; }
-	public java.util.List<java.util.Map<String, Double>> getArrayOfMapsOfCounts() { return this.arrayOfMapsOfCounts; }
-	public java.util.List<java.util.Map<String, Double>> getArrayOfMapsOfCountsOrNull() { return this.arrayOfMapsOfCountsOrNull; }
-	public java.util.List<java.util.Map<String, Double>> getArrayOfNullsAndMapsOfCounts() { return this.arrayOfNullsAndMapsOfCounts; }
-	public java.util.List<java.util.Map<String, Double>> getArrayOfMapsOfNullsAndCounts() { return this.arrayOfMapsOfNullsAndCounts; }
-	public java.util.List<java.util.Map<String, Double>> getArrayOfNullsAndMapsOfNullsAndCountsOrNull() { return this.arrayOfNullsAndMapsOfNullsAndCountsOrNull; }
-	public java.util.Map<String, java.util.List<Double>> getMapOfArraysOfCounts() { return this.mapOfArraysOfCounts; }
-	public java.util.Map<String, java.util.List<Double>> getMapOfArraysOfCountsOrNull() { return this.mapOfArraysOfCountsOrNull; }
-	public java.util.Map<String, java.util.List<Double>> getMapOfNullsAndArraysOfCounts() { return this.mapOfNullsAndArraysOfCounts; }
-	public java.util.Map<String, java.util.List<Double>> getMapOfArraysOfNullsAndCounts() { return this.mapOfArraysOfNullsAndCounts; }
-	public java.util.Map<String, java.util.List<Double>> getMapOfNullsAndArraysOfNullsAndCountsOrNull() { return this.mapOfNullsAndArraysOfNullsAndCountsOrNull; }
+	public Double getCountWithDescription() {
+		return this.countWithDescription;
+	}
+
+	/**
+	 * This is a count.
+	 */
+	public void setCountWithDescription(Double value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.countWithDescription = value;
+	}
+
+	public Double getCountOrNull() {
+		return this.countOrNull;
+	}
+
+	public void setCountOrNull(Double value) {
+		this.countOrNull = value;
+	}
+
+	public java.util.List<Double> getArrayOfCounts() {
+		return this.arrayOfCounts;
+	}
+
+	public void setArrayOfCounts(java.util.List<Double> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfCounts = value;
+	}
+
+	public java.util.List<java.util.List<Double>> getArrayOfArraysOfCounts() {
+		return this.arrayOfArraysOfCounts;
+	}
+
+	public void setArrayOfArraysOfCounts(java.util.List<java.util.List<Double>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfArraysOfCounts = value;
+	}
+
+	public java.util.List<Double> getArrayOfCountsAndNulls() {
+		return this.arrayOfCountsAndNulls;
+	}
+
+	public void setArrayOfCountsAndNulls(java.util.List<Double> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfCountsAndNulls = value;
+	}
+
+	public java.util.List<Double> getArrayOfCountsOrNull() {
+		return this.arrayOfCountsOrNull;
+	}
+
+	public void setArrayOfCountsOrNull(java.util.List<Double> value) {
+		this.arrayOfCountsOrNull = value;
+	}
+
+	public java.util.List<Double> getArrayOfCountsAndNullsOrNull() {
+		return this.arrayOfCountsAndNullsOrNull;
+	}
+
+	public void setArrayOfCountsAndNullsOrNull(java.util.List<Double> value) {
+		this.arrayOfCountsAndNullsOrNull = value;
+	}
+
+	public java.util.Map<String, Double> getMapOfCounts() {
+		return this.mapOfCounts;
+	}
+
+	public void setMapOfCounts(java.util.Map<String, Double> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfCounts = value;
+	}
+
+	public java.util.Map<String, java.util.Map<String, Double>> getMapOfMapsOfCounts() {
+		return this.mapOfMapsOfCounts;
+	}
+
+	public void setMapOfMapsOfCounts(java.util.Map<String, java.util.Map<String, Double>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfMapsOfCounts = value;
+	}
+
+	public java.util.Map<String, Double> getMapOfNullsAndCounts() {
+		return this.mapOfNullsAndCounts;
+	}
+
+	public void setMapOfNullsAndCounts(java.util.Map<String, Double> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndCounts = value;
+	}
+
+	public java.util.Map<String, Double> getMapOfCountsOrNull() {
+		return this.mapOfCountsOrNull;
+	}
+
+	public void setMapOfCountsOrNull(java.util.Map<String, Double> value) {
+		this.mapOfCountsOrNull = value;
+	}
+
+	public java.util.Map<String, Double> getMapOfNullsAndCountsOrNull() {
+		return this.mapOfNullsAndCountsOrNull;
+	}
+
+	public void setMapOfNullsAndCountsOrNull(java.util.Map<String, Double> value) {
+		this.mapOfNullsAndCountsOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, Double>> getArrayOfMapsOfCounts() {
+		return this.arrayOfMapsOfCounts;
+	}
+
+	public void setArrayOfMapsOfCounts(java.util.List<java.util.Map<String, Double>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfCounts = value;
+	}
+
+	public java.util.List<java.util.Map<String, Double>> getArrayOfMapsOfCountsOrNull() {
+		return this.arrayOfMapsOfCountsOrNull;
+	}
+
+	public void setArrayOfMapsOfCountsOrNull(java.util.List<java.util.Map<String, Double>> value) {
+		this.arrayOfMapsOfCountsOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, Double>> getArrayOfNullsAndMapsOfCounts() {
+		return this.arrayOfNullsAndMapsOfCounts;
+	}
+
+	public void setArrayOfNullsAndMapsOfCounts(java.util.List<java.util.Map<String, Double>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfNullsAndMapsOfCounts = value;
+	}
+
+	public java.util.List<java.util.Map<String, Double>> getArrayOfMapsOfNullsAndCounts() {
+		return this.arrayOfMapsOfNullsAndCounts;
+	}
+
+	public void setArrayOfMapsOfNullsAndCounts(java.util.List<java.util.Map<String, Double>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfNullsAndCounts = value;
+	}
+
+	public java.util.List<java.util.Map<String, Double>> getArrayOfNullsAndMapsOfNullsAndCountsOrNull() {
+		return this.arrayOfNullsAndMapsOfNullsAndCountsOrNull;
+	}
+
+	public void setArrayOfNullsAndMapsOfNullsAndCountsOrNull(java.util.List<java.util.Map<String, Double>> value) {
+		this.arrayOfNullsAndMapsOfNullsAndCountsOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<Double>> getMapOfArraysOfCounts() {
+		return this.mapOfArraysOfCounts;
+	}
+
+	public void setMapOfArraysOfCounts(java.util.Map<String, java.util.List<Double>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfCounts = value;
+	}
+
+	public java.util.Map<String, java.util.List<Double>> getMapOfArraysOfCountsOrNull() {
+		return this.mapOfArraysOfCountsOrNull;
+	}
+
+	public void setMapOfArraysOfCountsOrNull(java.util.Map<String, java.util.List<Double>> value) {
+		this.mapOfArraysOfCountsOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<Double>> getMapOfNullsAndArraysOfCounts() {
+		return this.mapOfNullsAndArraysOfCounts;
+	}
+
+	public void setMapOfNullsAndArraysOfCounts(java.util.Map<String, java.util.List<Double>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndArraysOfCounts = value;
+	}
+
+	public java.util.Map<String, java.util.List<Double>> getMapOfArraysOfNullsAndCounts() {
+		return this.mapOfArraysOfNullsAndCounts;
+	}
+
+	public void setMapOfArraysOfNullsAndCounts(java.util.Map<String, java.util.List<Double>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfNullsAndCounts = value;
+	}
+
+	public java.util.Map<String, java.util.List<Double>> getMapOfNullsAndArraysOfNullsAndCountsOrNull() {
+		return this.mapOfNullsAndArraysOfNullsAndCountsOrNull;
+	}
+
+	public void setMapOfNullsAndArraysOfNullsAndCountsOrNull(java.util.Map<String, java.util.List<Double>> value) {
+		this.mapOfNullsAndArraysOfNullsAndCountsOrNull = value;
+	}
 
 	@JsonCreator
 	public static JsonNumberTest jacksonHelper(
@@ -205,10 +426,12 @@ public final class JsonNumberTest {
 			@JsonProperty("countWithDescription") Double countWithDescription,
 			@JsonProperty("countOrNull") Double countOrNull,
 			@JsonProperty("arrayOfCounts") java.util.List<Double> arrayOfCounts,
+			@JsonProperty("arrayOfArraysOfCounts") java.util.List<java.util.List<Double>> arrayOfArraysOfCounts,
 			@JsonProperty("arrayOfCountsAndNulls") java.util.List<Double> arrayOfCountsAndNulls,
 			@JsonProperty("arrayOfCountsOrNull") java.util.List<Double> arrayOfCountsOrNull,
 			@JsonProperty("arrayOfCountsAndNullsOrNull") java.util.List<Double> arrayOfCountsAndNullsOrNull,
 			@JsonProperty("mapOfCounts") java.util.Map<String, Double> mapOfCounts,
+			@JsonProperty("mapOfMapsOfCounts") java.util.Map<String, java.util.Map<String, Double>> mapOfMapsOfCounts,
 			@JsonProperty("mapOfNullsAndCounts") java.util.Map<String, Double> mapOfNullsAndCounts,
 			@JsonProperty("mapOfCountsOrNull") java.util.Map<String, Double> mapOfCountsOrNull,
 			@JsonProperty("mapOfNullsAndCountsOrNull") java.util.Map<String, Double> mapOfNullsAndCountsOrNull,
@@ -228,10 +451,12 @@ public final class JsonNumberTest {
 				.withCountWithDescription(countWithDescription)
 				.withCountOrNull(countOrNull)
 				.withArrayOfCounts(arrayOfCounts)
+				.withArrayOfArraysOfCounts(arrayOfArraysOfCounts)
 				.withArrayOfCountsAndNulls(arrayOfCountsAndNulls)
 				.withArrayOfCountsOrNull(arrayOfCountsOrNull)
 				.withArrayOfCountsAndNullsOrNull(arrayOfCountsAndNullsOrNull)
 				.withMapOfCounts(mapOfCounts)
+				.withMapOfMapsOfCounts(mapOfMapsOfCounts)
 				.withMapOfNullsAndCounts(mapOfNullsAndCounts)
 				.withMapOfCountsOrNull(mapOfCountsOrNull)
 				.withMapOfNullsAndCountsOrNull(mapOfNullsAndCountsOrNull)
@@ -252,8 +477,10 @@ public final class JsonNumberTest {
 	private static final class __MISSING_count__ {}
 	private static final class __MISSING_countWithDescription__ {}
 	private static final class __MISSING_arrayOfCounts__ {}
+	private static final class __MISSING_arrayOfArraysOfCounts__ {}
 	private static final class __MISSING_arrayOfCountsAndNulls__ {}
 	private static final class __MISSING_mapOfCounts__ {}
+	private static final class __MISSING_mapOfMapsOfCounts__ {}
 	private static final class __MISSING_mapOfNullsAndCounts__ {}
 	private static final class __MISSING_arrayOfMapsOfCounts__ {}
 	private static final class __MISSING_arrayOfNullsAndMapsOfCounts__ {}
@@ -266,8 +493,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -281,10 +510,12 @@ public final class JsonNumberTest {
 		private Double countWithDescription;
 		private Double countOrNull;
 		private java.util.List<Double> arrayOfCounts;
+		private java.util.List<java.util.List<Double>> arrayOfArraysOfCounts;
 		private java.util.List<Double> arrayOfCountsAndNulls;
 		private java.util.List<Double> arrayOfCountsOrNull;
 		private java.util.List<Double> arrayOfCountsAndNullsOrNull;
 		private java.util.Map<String, Double> mapOfCounts;
+		private java.util.Map<String, java.util.Map<String, Double>> mapOfMapsOfCounts;
 		private java.util.Map<String, Double> mapOfNullsAndCounts;
 		private java.util.Map<String, Double> mapOfCountsOrNull;
 		private java.util.Map<String, Double> mapOfNullsAndCountsOrNull;
@@ -305,8 +536,10 @@ public final class JsonNumberTest {
 				__MISSING_count__,
 				__MISSING_countWithDescription__,
 				__MISSING_arrayOfCounts__,
+				__MISSING_arrayOfArraysOfCounts__,
 				__MISSING_arrayOfCountsAndNulls__,
 				__MISSING_mapOfCounts__,
+				__MISSING_mapOfMapsOfCounts__,
 				__MISSING_mapOfNullsAndCounts__,
 				__MISSING_arrayOfMapsOfCounts__,
 				__MISSING_arrayOfNullsAndMapsOfCounts__,
@@ -319,8 +552,10 @@ public final class JsonNumberTest {
 				__MISSING_count__,
 				__MISSING_countWithDescription__,
 				__MISSING_arrayOfCounts__,
+				__MISSING_arrayOfArraysOfCounts__,
 				__MISSING_arrayOfCountsAndNulls__,
 				__MISSING_mapOfCounts__,
+				__MISSING_mapOfMapsOfCounts__,
 				__MISSING_mapOfNullsAndCounts__,
 				__MISSING_arrayOfMapsOfCounts__,
 				__MISSING_arrayOfNullsAndMapsOfCounts__,
@@ -336,8 +571,10 @@ public final class JsonNumberTest {
 				JsonNumberTest.__OK__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -351,8 +588,10 @@ public final class JsonNumberTest {
 				JsonNumberTest.__OK__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -371,8 +610,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				JsonNumberTest.__OK__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -386,8 +627,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				JsonNumberTest.__OK__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -403,8 +646,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -418,8 +663,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -435,8 +682,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				JsonNumberTest.__OK__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -450,8 +699,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				JsonNumberTest.__OK__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -468,7 +719,45 @@ public final class JsonNumberTest {
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
 				JsonNumberTest.__OK__,
+				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
+				__HAS_mapOfNullsAndCounts__,
+				__HAS_arrayOfMapsOfCounts__,
+				__HAS_arrayOfNullsAndMapsOfCounts__,
+				__HAS_arrayOfMapsOfNullsAndCounts__,
+				__HAS_mapOfArraysOfCounts__,
+				__HAS_mapOfNullsAndArraysOfCounts__,
+				__HAS_mapOfArraysOfNullsAndCounts__
+				> withArrayOfArraysOfCounts(java.util.List<java.util.List<Double>> value) {
+			this.arrayOfArraysOfCounts = value;
+			return (Builder<
+				__HAS_count__,
+				__HAS_countWithDescription__,
+				__HAS_arrayOfCounts__,
+				JsonNumberTest.__OK__,
+				__HAS_arrayOfCountsAndNulls__,
+				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
+				__HAS_mapOfNullsAndCounts__,
+				__HAS_arrayOfMapsOfCounts__,
+				__HAS_arrayOfNullsAndMapsOfCounts__,
+				__HAS_arrayOfMapsOfNullsAndCounts__,
+				__HAS_mapOfArraysOfCounts__,
+				__HAS_mapOfNullsAndArraysOfCounts__,
+				__HAS_mapOfArraysOfNullsAndCounts__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_count__,
+				__HAS_countWithDescription__,
+				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
+				JsonNumberTest.__OK__,
+				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -482,8 +771,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				JsonNumberTest.__OK__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -499,8 +790,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -514,8 +807,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -531,8 +826,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -546,8 +843,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -563,8 +862,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				JsonNumberTest.__OK__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -578,7 +879,45 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
+				JsonNumberTest.__OK__,
+				__HAS_mapOfMapsOfCounts__,
+				__HAS_mapOfNullsAndCounts__,
+				__HAS_arrayOfMapsOfCounts__,
+				__HAS_arrayOfNullsAndMapsOfCounts__,
+				__HAS_arrayOfMapsOfNullsAndCounts__,
+				__HAS_mapOfArraysOfCounts__,
+				__HAS_mapOfNullsAndArraysOfCounts__,
+				__HAS_mapOfArraysOfNullsAndCounts__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_count__,
+				__HAS_countWithDescription__,
+				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
+				__HAS_arrayOfCountsAndNulls__,
+				__HAS_mapOfCounts__,
+				JsonNumberTest.__OK__,
+				__HAS_mapOfNullsAndCounts__,
+				__HAS_arrayOfMapsOfCounts__,
+				__HAS_arrayOfNullsAndMapsOfCounts__,
+				__HAS_arrayOfMapsOfNullsAndCounts__,
+				__HAS_mapOfArraysOfCounts__,
+				__HAS_mapOfNullsAndArraysOfCounts__,
+				__HAS_mapOfArraysOfNullsAndCounts__
+				> withMapOfMapsOfCounts(java.util.Map<String, java.util.Map<String, Double>> value) {
+			this.mapOfMapsOfCounts = value;
+			return (Builder<
+				__HAS_count__,
+				__HAS_countWithDescription__,
+				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
+				__HAS_arrayOfCountsAndNulls__,
+				__HAS_mapOfCounts__,
 				JsonNumberTest.__OK__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
@@ -595,8 +934,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				JsonNumberTest.__OK__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -610,8 +951,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				JsonNumberTest.__OK__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -627,8 +970,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -642,8 +987,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -659,8 +1006,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -674,8 +1023,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -691,8 +1042,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				JsonNumberTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -706,8 +1059,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				JsonNumberTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -723,8 +1078,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -738,8 +1095,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -755,8 +1114,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				JsonNumberTest.__OK__,
@@ -770,8 +1131,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				JsonNumberTest.__OK__,
@@ -787,8 +1150,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -802,8 +1167,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -819,8 +1186,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -834,8 +1203,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -851,8 +1222,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -866,8 +1239,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -883,8 +1258,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -898,8 +1275,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -915,8 +1294,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -930,8 +1311,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -947,8 +1330,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -962,8 +1347,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -979,8 +1366,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,
@@ -994,8 +1383,10 @@ public final class JsonNumberTest {
 				__HAS_count__,
 				__HAS_countWithDescription__,
 				__HAS_arrayOfCounts__,
+				__HAS_arrayOfArraysOfCounts__,
 				__HAS_arrayOfCountsAndNulls__,
 				__HAS_mapOfCounts__,
+				__HAS_mapOfMapsOfCounts__,
 				__HAS_mapOfNullsAndCounts__,
 				__HAS_arrayOfMapsOfCounts__,
 				__HAS_arrayOfNullsAndMapsOfCounts__,

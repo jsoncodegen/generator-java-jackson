@@ -12,11 +12,11 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public final class JsonNumberEnumValueMixedTest {
 
-	private final jsoncodegen.javajacksontest.generated.parent.tests.child.JsonNumberEnum child = jsoncodegen.javajacksontest.generated.parent.tests.child.JsonNumberEnum.Name;
-	private final jsoncodegen.javajacksontest.generated.parent.tests.JsonNumberEnum local = jsoncodegen.javajacksontest.generated.parent.tests.JsonNumberEnum.Name;
-	private final jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum parent = jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum.Name;
-	private final jsoncodegen.javajacksontest.generated.JsonNumberEnum root = jsoncodegen.javajacksontest.generated.JsonNumberEnum.Name;
-	private final jsoncodegen.javajacksontest.generated.parent.sibling.JsonNumberEnum sibling = jsoncodegen.javajacksontest.generated.parent.sibling.JsonNumberEnum.Name;
+	private jsoncodegen.javajacksontest.generated.parent.tests.child.JsonNumberEnum child = jsoncodegen.javajacksontest.generated.parent.tests.child.JsonNumberEnum.Name;
+	private jsoncodegen.javajacksontest.generated.parent.tests.JsonNumberEnum local = jsoncodegen.javajacksontest.generated.parent.tests.JsonNumberEnum.Name;
+	private jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum parent = jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum.Name;
+	private jsoncodegen.javajacksontest.generated.JsonNumberEnum root = jsoncodegen.javajacksontest.generated.JsonNumberEnum.Name;
+	private jsoncodegen.javajacksontest.generated.parent.sibling.JsonNumberEnum sibling = jsoncodegen.javajacksontest.generated.parent.sibling.JsonNumberEnum.Name;
 
 	public JsonNumberEnumValueMixedTest(Builder builder) {
 
@@ -53,12 +53,57 @@ public final class JsonNumberEnumValueMixedTest {
 
 			.toString();
 	}
+	
+	public JsonNumberEnumValueMixedTest clone() {
+		return new JsonNumberEnumValueMixedTest(JsonNumberEnumValueMixedTest.Builder.create()
 
-	public jsoncodegen.javajacksontest.generated.parent.tests.child.JsonNumberEnum getChild() { return this.child; }
-	public jsoncodegen.javajacksontest.generated.parent.tests.JsonNumberEnum getLocal() { return this.local; }
-	public jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum getParent() { return this.parent; }
-	public jsoncodegen.javajacksontest.generated.JsonNumberEnum getRoot() { return this.root; }
-	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonNumberEnum getSibling() { return this.sibling; }
+		);
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.tests.child.JsonNumberEnum getChild() {
+		return this.child;
+	}
+
+	public void setChild(jsoncodegen.javajacksontest.generated.parent.tests.child.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.child = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.tests.JsonNumberEnum getLocal() {
+		return this.local;
+	}
+
+	public void setLocal(jsoncodegen.javajacksontest.generated.parent.tests.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.local = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum getParent() {
+		return this.parent;
+	}
+
+	public void setParent(jsoncodegen.javajacksontest.generated.parent.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.parent = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.JsonNumberEnum getRoot() {
+		return this.root;
+	}
+
+	public void setRoot(jsoncodegen.javajacksontest.generated.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.root = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonNumberEnum getSibling() {
+		return this.sibling;
+	}
+
+	public void setSibling(jsoncodegen.javajacksontest.generated.parent.sibling.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.sibling = value;
+	}
 
 	@JsonCreator
 	public static JsonNumberEnumValueMixedTest jacksonHelper(

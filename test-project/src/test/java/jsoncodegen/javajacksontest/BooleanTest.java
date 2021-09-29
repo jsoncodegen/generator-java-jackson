@@ -22,8 +22,10 @@ public class BooleanTest {
 						.withFlag(true)
 						.withFlagWithDescription(true)
 						.withArrayOfFlags(new ArrayList<Boolean>())
+						.withArrayOfArraysOfFlags(new ArrayList<List<Boolean>>())
 						.withArrayOfFlagsAndNulls(new ArrayList<Boolean>())
 						.withMapOfFlags(new HashMap<String, Boolean>())
+						.withMapOfMapsOfFlags(new HashMap<String, Map<String, Boolean>>())
 						.withMapOfNullsAndFlags(new HashMap<String, Boolean>())
 						.withArrayOfMapsOfFlags(new ArrayList<Map<String, Boolean>>())
 						.withArrayOfNullsAndMapsOfFlags(new ArrayList<Map<String, Boolean>>())
@@ -50,5 +52,78 @@ public class BooleanTest {
 			fail(e.getMessage());
 		}
 		assertEquals(obj, obj2);
+	}
+
+	@Test
+	public void canBeMutated() {
+		JsonBooleanTest obj = new JsonBooleanTest(
+				JsonBooleanTest.Builder.create()
+						.withFlag(true)
+						.withFlagWithDescription(true)
+						.withArrayOfFlags(new ArrayList<Boolean>())
+						.withArrayOfArraysOfFlags(new ArrayList<List<Boolean>>())
+						.withArrayOfFlagsAndNulls(new ArrayList<Boolean>())
+						.withMapOfFlags(new HashMap<String, Boolean>())
+						.withMapOfMapsOfFlags(new HashMap<String, Map<String, Boolean>>())
+						.withMapOfNullsAndFlags(new HashMap<String, Boolean>())
+						.withArrayOfMapsOfFlags(new ArrayList<Map<String, Boolean>>())
+						.withArrayOfNullsAndMapsOfFlags(new ArrayList<Map<String, Boolean>>())
+						.withArrayOfMapsOfNullsAndFlags(new ArrayList<Map<String, Boolean>>())
+						.withMapOfArraysOfFlags(new HashMap<String, List<Boolean>>())
+						.withMapOfNullsAndArraysOfFlags(new HashMap<String, List<Boolean>>())
+						.withMapOfArraysOfNullsAndFlags(new HashMap<String, List<Boolean>>())
+		);
+		JsonBooleanTest obj2 = obj.clone();
+		
+		assertNotSame(obj, obj2);
+		assertEquals(obj, obj2);
+		
+		obj2.setFlag(false);
+		
+		assertNotEquals(obj, obj2);
+		assertFalse(obj2.getFlag());
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void throwsOnBuildWithNull() {
+		JsonBooleanTest obj = new JsonBooleanTest(
+				JsonBooleanTest.Builder.create()
+						.withFlag(null)
+						.withFlagWithDescription(true)
+						.withArrayOfFlags(new ArrayList<Boolean>())
+						.withArrayOfArraysOfFlags(new ArrayList<List<Boolean>>())
+						.withArrayOfFlagsAndNulls(new ArrayList<Boolean>())
+						.withMapOfFlags(new HashMap<String, Boolean>())
+						.withMapOfMapsOfFlags(new HashMap<String, Map<String, Boolean>>())
+						.withMapOfNullsAndFlags(new HashMap<String, Boolean>())
+						.withArrayOfMapsOfFlags(new ArrayList<Map<String, Boolean>>())
+						.withArrayOfNullsAndMapsOfFlags(new ArrayList<Map<String, Boolean>>())
+						.withArrayOfMapsOfNullsAndFlags(new ArrayList<Map<String, Boolean>>())
+						.withMapOfArraysOfFlags(new HashMap<String, List<Boolean>>())
+						.withMapOfNullsAndArraysOfFlags(new HashMap<String, List<Boolean>>())
+						.withMapOfArraysOfNullsAndFlags(new HashMap<String, List<Boolean>>())
+		);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void throwsOnSetToNull() {
+		JsonBooleanTest obj = new JsonBooleanTest(
+				JsonBooleanTest.Builder.create()
+						.withFlag(true)
+						.withFlagWithDescription(true)
+						.withArrayOfFlags(new ArrayList<Boolean>())
+						.withArrayOfArraysOfFlags(new ArrayList<List<Boolean>>())
+						.withArrayOfFlagsAndNulls(new ArrayList<Boolean>())
+						.withMapOfFlags(new HashMap<String, Boolean>())
+						.withMapOfMapsOfFlags(new HashMap<String, Map<String, Boolean>>())
+						.withMapOfNullsAndFlags(new HashMap<String, Boolean>())
+						.withArrayOfMapsOfFlags(new ArrayList<Map<String, Boolean>>())
+						.withArrayOfNullsAndMapsOfFlags(new ArrayList<Map<String, Boolean>>())
+						.withArrayOfMapsOfNullsAndFlags(new ArrayList<Map<String, Boolean>>())
+						.withMapOfArraysOfFlags(new HashMap<String, List<Boolean>>())
+						.withMapOfNullsAndArraysOfFlags(new HashMap<String, List<Boolean>>())
+						.withMapOfArraysOfNullsAndFlags(new HashMap<String, List<Boolean>>())
+		);
+		obj.setFlag(null);
 	}
 }

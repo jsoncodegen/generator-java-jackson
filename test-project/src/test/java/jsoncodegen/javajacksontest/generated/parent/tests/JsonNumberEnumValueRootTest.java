@@ -12,29 +12,33 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public final class JsonNumberEnumValueRootTest {
 
-	private final jsoncodegen.javajacksontest.generated.JsonNumberEnum enumValue = jsoncodegen.javajacksontest.generated.JsonNumberEnum.Name;
-	private final jsoncodegen.javajacksontest.generated.JsonNumberEnum enumValueWithDescription = jsoncodegen.javajacksontest.generated.JsonNumberEnum.Name;
-	private final jsoncodegen.javajacksontest.generated.JsonNumberEnum enumValueOrNull;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValues;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesAndNulls;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesOrNull;
-	private final java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesAndNullsOrNull;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfEnumValues;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfNullsAndEnumValues;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfEnumValuesOrNull;
-	private final java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfNullsAndEnumValuesOrNull;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfMapsOfEnumValues;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfMapsOfEnumValuesOrNull;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfNullsAndMapsOfEnumValues;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfMapsOfNullsAndEnumValues;
-	private final java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfNullsAndMapsOfNullsAndEnumValuesOrNull;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfArraysOfEnumValues;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfArraysOfEnumValuesOrNull;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfNullsAndArraysOfEnumValues;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfArraysOfNullsAndEnumValues;
-	private final java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfNullsAndArraysOfNullsAndEnumValuesOrNull;
+	private jsoncodegen.javajacksontest.generated.JsonNumberEnum enumValue = jsoncodegen.javajacksontest.generated.JsonNumberEnum.Name;
+	private jsoncodegen.javajacksontest.generated.JsonNumberEnum enumValueWithDescription = jsoncodegen.javajacksontest.generated.JsonNumberEnum.Name;
+	private jsoncodegen.javajacksontest.generated.JsonNumberEnum enumValueOrNull;
+	private java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValues;
+	private java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfArraysOfEnumValues;
+	private java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesAndNulls;
+	private java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesOrNull;
+	private java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesAndNullsOrNull;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfEnumValues;
+	private java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfMapsOfEnumValues;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfNullsAndEnumValues;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfEnumValuesOrNull;
+	private java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfNullsAndEnumValuesOrNull;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfMapsOfEnumValues;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfMapsOfEnumValuesOrNull;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfNullsAndMapsOfEnumValues;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfMapsOfNullsAndEnumValues;
+	private java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfNullsAndMapsOfNullsAndEnumValuesOrNull;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfArraysOfEnumValues;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfArraysOfEnumValuesOrNull;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfNullsAndArraysOfEnumValues;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfArraysOfNullsAndEnumValues;
+	private java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfNullsAndArraysOfNullsAndEnumValuesOrNull;
 
 	public JsonNumberEnumValueRootTest(Builder<
+			JsonNumberEnumValueRootTest.__OK__,
+			JsonNumberEnumValueRootTest.__OK__,
 			JsonNumberEnumValueRootTest.__OK__,
 			JsonNumberEnumValueRootTest.__OK__,
 			JsonNumberEnumValueRootTest.__OK__,
@@ -47,8 +51,10 @@ public final class JsonNumberEnumValueRootTest {
 			JsonNumberEnumValueRootTest.__OK__
 			> builder) {
 		Validate.notNull(builder.arrayOfEnumValues, "Argument 'arrayOfEnumValues' must not be null.");
+		Validate.notNull(builder.arrayOfArraysOfEnumValues, "Argument 'arrayOfArraysOfEnumValues' must not be null.");
 		Validate.notNull(builder.arrayOfEnumValuesAndNulls, "Argument 'arrayOfEnumValuesAndNulls' must not be null.");
 		Validate.notNull(builder.mapOfEnumValues, "Argument 'mapOfEnumValues' must not be null.");
+		Validate.notNull(builder.mapOfMapsOfEnumValues, "Argument 'mapOfMapsOfEnumValues' must not be null.");
 		Validate.notNull(builder.mapOfNullsAndEnumValues, "Argument 'mapOfNullsAndEnumValues' must not be null.");
 		Validate.notNull(builder.arrayOfMapsOfEnumValues, "Argument 'arrayOfMapsOfEnumValues' must not be null.");
 		Validate.notNull(builder.arrayOfNullsAndMapsOfEnumValues, "Argument 'arrayOfNullsAndMapsOfEnumValues' must not be null.");
@@ -58,10 +64,12 @@ public final class JsonNumberEnumValueRootTest {
 		Validate.notNull(builder.mapOfArraysOfNullsAndEnumValues, "Argument 'mapOfArraysOfNullsAndEnumValues' must not be null.");
 		this.enumValueOrNull = builder.enumValueOrNull;
 		this.arrayOfEnumValues = builder.arrayOfEnumValues;
+		this.arrayOfArraysOfEnumValues = builder.arrayOfArraysOfEnumValues;
 		this.arrayOfEnumValuesAndNulls = builder.arrayOfEnumValuesAndNulls;
 		this.arrayOfEnumValuesOrNull = builder.arrayOfEnumValuesOrNull;
 		this.arrayOfEnumValuesAndNullsOrNull = builder.arrayOfEnumValuesAndNullsOrNull;
 		this.mapOfEnumValues = builder.mapOfEnumValues;
+		this.mapOfMapsOfEnumValues = builder.mapOfMapsOfEnumValues;
 		this.mapOfNullsAndEnumValues = builder.mapOfNullsAndEnumValues;
 		this.mapOfEnumValuesOrNull = builder.mapOfEnumValuesOrNull;
 		this.mapOfNullsAndEnumValuesOrNull = builder.mapOfNullsAndEnumValuesOrNull;
@@ -82,10 +90,12 @@ public final class JsonNumberEnumValueRootTest {
 		return new HashCodeBuilder()
 			.append(this.enumValueOrNull)
 			.append(this.arrayOfEnumValues)
+			.append(this.arrayOfArraysOfEnumValues)
 			.append(this.arrayOfEnumValuesAndNulls)
 			.append(this.arrayOfEnumValuesOrNull)
 			.append(this.arrayOfEnumValuesAndNullsOrNull)
 			.append(this.mapOfEnumValues)
+			.append(this.mapOfMapsOfEnumValues)
 			.append(this.mapOfNullsAndEnumValues)
 			.append(this.mapOfEnumValuesOrNull)
 			.append(this.mapOfNullsAndEnumValuesOrNull)
@@ -117,10 +127,12 @@ public final class JsonNumberEnumValueRootTest {
 		return new EqualsBuilder()
 			.append(this.enumValueOrNull, rhs.enumValueOrNull)
 			.append(this.arrayOfEnumValues, rhs.arrayOfEnumValues)
+			.append(this.arrayOfArraysOfEnumValues, rhs.arrayOfArraysOfEnumValues)
 			.append(this.arrayOfEnumValuesAndNulls, rhs.arrayOfEnumValuesAndNulls)
 			.append(this.arrayOfEnumValuesOrNull, rhs.arrayOfEnumValuesOrNull)
 			.append(this.arrayOfEnumValuesAndNullsOrNull, rhs.arrayOfEnumValuesAndNullsOrNull)
 			.append(this.mapOfEnumValues, rhs.mapOfEnumValues)
+			.append(this.mapOfMapsOfEnumValues, rhs.mapOfMapsOfEnumValues)
 			.append(this.mapOfNullsAndEnumValues, rhs.mapOfNullsAndEnumValues)
 			.append(this.mapOfEnumValuesOrNull, rhs.mapOfEnumValuesOrNull)
 			.append(this.mapOfNullsAndEnumValuesOrNull, rhs.mapOfNullsAndEnumValuesOrNull)
@@ -142,10 +154,12 @@ public final class JsonNumberEnumValueRootTest {
 		return new ToStringBuilder(this)
 			.append("enumValueOrNull", this.enumValueOrNull)
 			.append("arrayOfEnumValues", this.arrayOfEnumValues)
+			.append("arrayOfArraysOfEnumValues", this.arrayOfArraysOfEnumValues)
 			.append("arrayOfEnumValuesAndNulls", this.arrayOfEnumValuesAndNulls)
 			.append("arrayOfEnumValuesOrNull", this.arrayOfEnumValuesOrNull)
 			.append("arrayOfEnumValuesAndNullsOrNull", this.arrayOfEnumValuesAndNullsOrNull)
 			.append("mapOfEnumValues", this.mapOfEnumValues)
+			.append("mapOfMapsOfEnumValues", this.mapOfMapsOfEnumValues)
 			.append("mapOfNullsAndEnumValues", this.mapOfNullsAndEnumValues)
 			.append("mapOfEnumValuesOrNull", this.mapOfEnumValuesOrNull)
 			.append("mapOfNullsAndEnumValuesOrNull", this.mapOfNullsAndEnumValuesOrNull)
@@ -161,40 +175,247 @@ public final class JsonNumberEnumValueRootTest {
 			.append("mapOfNullsAndArraysOfNullsAndEnumValuesOrNull", this.mapOfNullsAndArraysOfNullsAndEnumValuesOrNull)
 			.toString();
 	}
+	
+	public JsonNumberEnumValueRootTest clone() {
+		return new JsonNumberEnumValueRootTest(JsonNumberEnumValueRootTest.Builder.create()
+				.withEnumValueOrNull(this.enumValueOrNull)
+				.withArrayOfEnumValues(this.arrayOfEnumValues)
+				.withArrayOfArraysOfEnumValues(this.arrayOfArraysOfEnumValues)
+				.withArrayOfEnumValuesAndNulls(this.arrayOfEnumValuesAndNulls)
+				.withArrayOfEnumValuesOrNull(this.arrayOfEnumValuesOrNull)
+				.withArrayOfEnumValuesAndNullsOrNull(this.arrayOfEnumValuesAndNullsOrNull)
+				.withMapOfEnumValues(this.mapOfEnumValues)
+				.withMapOfMapsOfEnumValues(this.mapOfMapsOfEnumValues)
+				.withMapOfNullsAndEnumValues(this.mapOfNullsAndEnumValues)
+				.withMapOfEnumValuesOrNull(this.mapOfEnumValuesOrNull)
+				.withMapOfNullsAndEnumValuesOrNull(this.mapOfNullsAndEnumValuesOrNull)
+				.withArrayOfMapsOfEnumValues(this.arrayOfMapsOfEnumValues)
+				.withArrayOfMapsOfEnumValuesOrNull(this.arrayOfMapsOfEnumValuesOrNull)
+				.withArrayOfNullsAndMapsOfEnumValues(this.arrayOfNullsAndMapsOfEnumValues)
+				.withArrayOfMapsOfNullsAndEnumValues(this.arrayOfMapsOfNullsAndEnumValues)
+				.withArrayOfNullsAndMapsOfNullsAndEnumValuesOrNull(this.arrayOfNullsAndMapsOfNullsAndEnumValuesOrNull)
+				.withMapOfArraysOfEnumValues(this.mapOfArraysOfEnumValues)
+				.withMapOfArraysOfEnumValuesOrNull(this.mapOfArraysOfEnumValuesOrNull)
+				.withMapOfNullsAndArraysOfEnumValues(this.mapOfNullsAndArraysOfEnumValues)
+				.withMapOfArraysOfNullsAndEnumValues(this.mapOfArraysOfNullsAndEnumValues)
+				.withMapOfNullsAndArraysOfNullsAndEnumValuesOrNull(this.mapOfNullsAndArraysOfNullsAndEnumValuesOrNull)
+		);
+	}
 
-	public jsoncodegen.javajacksontest.generated.JsonNumberEnum getEnumValue() { return this.enumValue; }
+	public jsoncodegen.javajacksontest.generated.JsonNumberEnum getEnumValue() {
+		return this.enumValue;
+	}
+
+	public void setEnumValue(jsoncodegen.javajacksontest.generated.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.enumValue = value;
+	}
+
 	/**
 	 * This is an enum value.
 	 */
-	public jsoncodegen.javajacksontest.generated.JsonNumberEnum getEnumValueWithDescription() { return this.enumValueWithDescription; }
-	public jsoncodegen.javajacksontest.generated.JsonNumberEnum getEnumValueOrNull() { return this.enumValueOrNull; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> getArrayOfEnumValues() { return this.arrayOfEnumValues; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> getArrayOfEnumValuesAndNulls() { return this.arrayOfEnumValuesAndNulls; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> getArrayOfEnumValuesOrNull() { return this.arrayOfEnumValuesOrNull; }
-	public java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> getArrayOfEnumValuesAndNullsOrNull() { return this.arrayOfEnumValuesAndNullsOrNull; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> getMapOfEnumValues() { return this.mapOfEnumValues; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> getMapOfNullsAndEnumValues() { return this.mapOfNullsAndEnumValues; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> getMapOfEnumValuesOrNull() { return this.mapOfEnumValuesOrNull; }
-	public java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> getMapOfNullsAndEnumValuesOrNull() { return this.mapOfNullsAndEnumValuesOrNull; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfMapsOfEnumValues() { return this.arrayOfMapsOfEnumValues; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfMapsOfEnumValuesOrNull() { return this.arrayOfMapsOfEnumValuesOrNull; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfNullsAndMapsOfEnumValues() { return this.arrayOfNullsAndMapsOfEnumValues; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfMapsOfNullsAndEnumValues() { return this.arrayOfMapsOfNullsAndEnumValues; }
-	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfNullsAndMapsOfNullsAndEnumValuesOrNull() { return this.arrayOfNullsAndMapsOfNullsAndEnumValuesOrNull; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfArraysOfEnumValues() { return this.mapOfArraysOfEnumValues; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfArraysOfEnumValuesOrNull() { return this.mapOfArraysOfEnumValuesOrNull; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfNullsAndArraysOfEnumValues() { return this.mapOfNullsAndArraysOfEnumValues; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfArraysOfNullsAndEnumValues() { return this.mapOfArraysOfNullsAndEnumValues; }
-	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfNullsAndArraysOfNullsAndEnumValuesOrNull() { return this.mapOfNullsAndArraysOfNullsAndEnumValuesOrNull; }
+	public jsoncodegen.javajacksontest.generated.JsonNumberEnum getEnumValueWithDescription() {
+		return this.enumValueWithDescription;
+	}
+
+	/**
+	 * This is an enum value.
+	 */
+	public void setEnumValueWithDescription(jsoncodegen.javajacksontest.generated.JsonNumberEnum value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.enumValueWithDescription = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.JsonNumberEnum getEnumValueOrNull() {
+		return this.enumValueOrNull;
+	}
+
+	public void setEnumValueOrNull(jsoncodegen.javajacksontest.generated.JsonNumberEnum value) {
+		this.enumValueOrNull = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> getArrayOfEnumValues() {
+		return this.arrayOfEnumValues;
+	}
+
+	public void setArrayOfEnumValues(java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfEnumValues = value;
+	}
+
+	public java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfArraysOfEnumValues() {
+		return this.arrayOfArraysOfEnumValues;
+	}
+
+	public void setArrayOfArraysOfEnumValues(java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfArraysOfEnumValues = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> getArrayOfEnumValuesAndNulls() {
+		return this.arrayOfEnumValuesAndNulls;
+	}
+
+	public void setArrayOfEnumValuesAndNulls(java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfEnumValuesAndNulls = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> getArrayOfEnumValuesOrNull() {
+		return this.arrayOfEnumValuesOrNull;
+	}
+
+	public void setArrayOfEnumValuesOrNull(java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> value) {
+		this.arrayOfEnumValuesOrNull = value;
+	}
+
+	public java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> getArrayOfEnumValuesAndNullsOrNull() {
+		return this.arrayOfEnumValuesAndNullsOrNull;
+	}
+
+	public void setArrayOfEnumValuesAndNullsOrNull(java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> value) {
+		this.arrayOfEnumValuesAndNullsOrNull = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> getMapOfEnumValues() {
+		return this.mapOfEnumValues;
+	}
+
+	public void setMapOfEnumValues(java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfEnumValues = value;
+	}
+
+	public java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfMapsOfEnumValues() {
+		return this.mapOfMapsOfEnumValues;
+	}
+
+	public void setMapOfMapsOfEnumValues(java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfMapsOfEnumValues = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> getMapOfNullsAndEnumValues() {
+		return this.mapOfNullsAndEnumValues;
+	}
+
+	public void setMapOfNullsAndEnumValues(java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndEnumValues = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> getMapOfEnumValuesOrNull() {
+		return this.mapOfEnumValuesOrNull;
+	}
+
+	public void setMapOfEnumValuesOrNull(java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> value) {
+		this.mapOfEnumValuesOrNull = value;
+	}
+
+	public java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> getMapOfNullsAndEnumValuesOrNull() {
+		return this.mapOfNullsAndEnumValuesOrNull;
+	}
+
+	public void setMapOfNullsAndEnumValuesOrNull(java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> value) {
+		this.mapOfNullsAndEnumValuesOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfMapsOfEnumValues() {
+		return this.arrayOfMapsOfEnumValues;
+	}
+
+	public void setArrayOfMapsOfEnumValues(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfEnumValues = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfMapsOfEnumValuesOrNull() {
+		return this.arrayOfMapsOfEnumValuesOrNull;
+	}
+
+	public void setArrayOfMapsOfEnumValuesOrNull(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		this.arrayOfMapsOfEnumValuesOrNull = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfNullsAndMapsOfEnumValues() {
+		return this.arrayOfNullsAndMapsOfEnumValues;
+	}
+
+	public void setArrayOfNullsAndMapsOfEnumValues(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfNullsAndMapsOfEnumValues = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfMapsOfNullsAndEnumValues() {
+		return this.arrayOfMapsOfNullsAndEnumValues;
+	}
+
+	public void setArrayOfMapsOfNullsAndEnumValues(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.arrayOfMapsOfNullsAndEnumValues = value;
+	}
+
+	public java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getArrayOfNullsAndMapsOfNullsAndEnumValuesOrNull() {
+		return this.arrayOfNullsAndMapsOfNullsAndEnumValuesOrNull;
+	}
+
+	public void setArrayOfNullsAndMapsOfNullsAndEnumValuesOrNull(java.util.List<java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		this.arrayOfNullsAndMapsOfNullsAndEnumValuesOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfArraysOfEnumValues() {
+		return this.mapOfArraysOfEnumValues;
+	}
+
+	public void setMapOfArraysOfEnumValues(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfEnumValues = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfArraysOfEnumValuesOrNull() {
+		return this.mapOfArraysOfEnumValuesOrNull;
+	}
+
+	public void setMapOfArraysOfEnumValuesOrNull(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		this.mapOfArraysOfEnumValuesOrNull = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfNullsAndArraysOfEnumValues() {
+		return this.mapOfNullsAndArraysOfEnumValues;
+	}
+
+	public void setMapOfNullsAndArraysOfEnumValues(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfNullsAndArraysOfEnumValues = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfArraysOfNullsAndEnumValues() {
+		return this.mapOfArraysOfNullsAndEnumValues;
+	}
+
+	public void setMapOfArraysOfNullsAndEnumValues(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.mapOfArraysOfNullsAndEnumValues = value;
+	}
+
+	public java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> getMapOfNullsAndArraysOfNullsAndEnumValuesOrNull() {
+		return this.mapOfNullsAndArraysOfNullsAndEnumValuesOrNull;
+	}
+
+	public void setMapOfNullsAndArraysOfNullsAndEnumValuesOrNull(java.util.Map<String, java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+		this.mapOfNullsAndArraysOfNullsAndEnumValuesOrNull = value;
+	}
 
 	@JsonCreator
 	public static JsonNumberEnumValueRootTest jacksonHelper(
 			@JsonProperty("enumValueOrNull") jsoncodegen.javajacksontest.generated.JsonNumberEnum enumValueOrNull,
 			@JsonProperty("arrayOfEnumValues") java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValues,
+			@JsonProperty("arrayOfArraysOfEnumValues") java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfArraysOfEnumValues,
 			@JsonProperty("arrayOfEnumValuesAndNulls") java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesAndNulls,
 			@JsonProperty("arrayOfEnumValuesOrNull") java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesOrNull,
 			@JsonProperty("arrayOfEnumValuesAndNullsOrNull") java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesAndNullsOrNull,
 			@JsonProperty("mapOfEnumValues") java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfEnumValues,
+			@JsonProperty("mapOfMapsOfEnumValues") java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfMapsOfEnumValues,
 			@JsonProperty("mapOfNullsAndEnumValues") java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfNullsAndEnumValues,
 			@JsonProperty("mapOfEnumValuesOrNull") java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfEnumValuesOrNull,
 			@JsonProperty("mapOfNullsAndEnumValuesOrNull") java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfNullsAndEnumValuesOrNull,
@@ -212,10 +433,12 @@ public final class JsonNumberEnumValueRootTest {
 		return new JsonNumberEnumValueRootTest(JsonNumberEnumValueRootTest.Builder.create()
 				.withEnumValueOrNull(enumValueOrNull)
 				.withArrayOfEnumValues(arrayOfEnumValues)
+				.withArrayOfArraysOfEnumValues(arrayOfArraysOfEnumValues)
 				.withArrayOfEnumValuesAndNulls(arrayOfEnumValuesAndNulls)
 				.withArrayOfEnumValuesOrNull(arrayOfEnumValuesOrNull)
 				.withArrayOfEnumValuesAndNullsOrNull(arrayOfEnumValuesAndNullsOrNull)
 				.withMapOfEnumValues(mapOfEnumValues)
+				.withMapOfMapsOfEnumValues(mapOfMapsOfEnumValues)
 				.withMapOfNullsAndEnumValues(mapOfNullsAndEnumValues)
 				.withMapOfEnumValuesOrNull(mapOfEnumValuesOrNull)
 				.withMapOfNullsAndEnumValuesOrNull(mapOfNullsAndEnumValuesOrNull)
@@ -234,8 +457,10 @@ public final class JsonNumberEnumValueRootTest {
 
 	private static final class __OK__ {}
 	private static final class __MISSING_arrayOfEnumValues__ {}
+	private static final class __MISSING_arrayOfArraysOfEnumValues__ {}
 	private static final class __MISSING_arrayOfEnumValuesAndNulls__ {}
 	private static final class __MISSING_mapOfEnumValues__ {}
+	private static final class __MISSING_mapOfMapsOfEnumValues__ {}
 	private static final class __MISSING_mapOfNullsAndEnumValues__ {}
 	private static final class __MISSING_arrayOfMapsOfEnumValues__ {}
 	private static final class __MISSING_arrayOfNullsAndMapsOfEnumValues__ {}
@@ -246,8 +471,10 @@ public final class JsonNumberEnumValueRootTest {
 
 	public static final class Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -259,10 +486,12 @@ public final class JsonNumberEnumValueRootTest {
 
 		private jsoncodegen.javajacksontest.generated.JsonNumberEnum enumValueOrNull;
 		private java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValues;
+		private java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> arrayOfArraysOfEnumValues;
 		private java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesAndNulls;
 		private java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesOrNull;
 		private java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum> arrayOfEnumValuesAndNullsOrNull;
 		private java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfEnumValues;
+		private java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> mapOfMapsOfEnumValues;
 		private java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfNullsAndEnumValues;
 		private java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfEnumValuesOrNull;
 		private java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum> mapOfNullsAndEnumValuesOrNull;
@@ -281,8 +510,10 @@ public final class JsonNumberEnumValueRootTest {
 
 		public static Builder<
 				__MISSING_arrayOfEnumValues__,
+				__MISSING_arrayOfArraysOfEnumValues__,
 				__MISSING_arrayOfEnumValuesAndNulls__,
 				__MISSING_mapOfEnumValues__,
+				__MISSING_mapOfMapsOfEnumValues__,
 				__MISSING_mapOfNullsAndEnumValues__,
 				__MISSING_arrayOfMapsOfEnumValues__,
 				__MISSING_arrayOfNullsAndMapsOfEnumValues__,
@@ -293,8 +524,10 @@ public final class JsonNumberEnumValueRootTest {
 				> create() {
 			return new Builder<
 				__MISSING_arrayOfEnumValues__,
+				__MISSING_arrayOfArraysOfEnumValues__,
 				__MISSING_arrayOfEnumValuesAndNulls__,
 				__MISSING_mapOfEnumValues__,
+				__MISSING_mapOfMapsOfEnumValues__,
 				__MISSING_mapOfNullsAndEnumValues__,
 				__MISSING_arrayOfMapsOfEnumValues__,
 				__MISSING_arrayOfNullsAndMapsOfEnumValues__,
@@ -308,8 +541,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -321,8 +556,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.enumValueOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -336,8 +573,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				JsonNumberEnumValueRootTest.__OK__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -349,8 +588,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfEnumValues = value;
 			return (Builder<
 				JsonNumberEnumValueRootTest.__OK__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -365,7 +606,41 @@ public final class JsonNumberEnumValueRootTest {
 		public Builder<
 				__HAS_arrayOfEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
+				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
+				__HAS_mapOfNullsAndEnumValues__,
+				__HAS_arrayOfMapsOfEnumValues__,
+				__HAS_arrayOfNullsAndMapsOfEnumValues__,
+				__HAS_arrayOfMapsOfNullsAndEnumValues__,
+				__HAS_mapOfArraysOfEnumValues__,
+				__HAS_mapOfNullsAndArraysOfEnumValues__,
+				__HAS_mapOfArraysOfNullsAndEnumValues__
+				> withArrayOfArraysOfEnumValues(java.util.List<java.util.List<jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+			this.arrayOfArraysOfEnumValues = value;
+			return (Builder<
+				__HAS_arrayOfEnumValues__,
+				JsonNumberEnumValueRootTest.__OK__,
+				__HAS_arrayOfEnumValuesAndNulls__,
+				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
+				__HAS_mapOfNullsAndEnumValues__,
+				__HAS_arrayOfMapsOfEnumValues__,
+				__HAS_arrayOfNullsAndMapsOfEnumValues__,
+				__HAS_arrayOfMapsOfNullsAndEnumValues__,
+				__HAS_mapOfArraysOfEnumValues__,
+				__HAS_mapOfNullsAndArraysOfEnumValues__,
+				__HAS_mapOfArraysOfNullsAndEnumValues__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
+				JsonNumberEnumValueRootTest.__OK__,
+				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -377,8 +652,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfEnumValuesAndNulls = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -392,8 +669,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -405,8 +684,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfEnumValuesOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -420,8 +701,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -433,8 +716,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfEnumValuesAndNullsOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -448,8 +733,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				JsonNumberEnumValueRootTest.__OK__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -461,7 +748,41 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfEnumValues = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
+				JsonNumberEnumValueRootTest.__OK__,
+				__HAS_mapOfMapsOfEnumValues__,
+				__HAS_mapOfNullsAndEnumValues__,
+				__HAS_arrayOfMapsOfEnumValues__,
+				__HAS_arrayOfNullsAndMapsOfEnumValues__,
+				__HAS_arrayOfMapsOfNullsAndEnumValues__,
+				__HAS_mapOfArraysOfEnumValues__,
+				__HAS_mapOfNullsAndArraysOfEnumValues__,
+				__HAS_mapOfArraysOfNullsAndEnumValues__
+				>) this;
+		}
+
+		@SuppressWarnings("unchecked")
+		public Builder<
+				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
+				__HAS_arrayOfEnumValuesAndNulls__,
+				__HAS_mapOfEnumValues__,
+				JsonNumberEnumValueRootTest.__OK__,
+				__HAS_mapOfNullsAndEnumValues__,
+				__HAS_arrayOfMapsOfEnumValues__,
+				__HAS_arrayOfNullsAndMapsOfEnumValues__,
+				__HAS_arrayOfMapsOfNullsAndEnumValues__,
+				__HAS_mapOfArraysOfEnumValues__,
+				__HAS_mapOfNullsAndArraysOfEnumValues__,
+				__HAS_mapOfArraysOfNullsAndEnumValues__
+				> withMapOfMapsOfEnumValues(java.util.Map<String, java.util.Map<String, jsoncodegen.javajacksontest.generated.JsonNumberEnum>> value) {
+			this.mapOfMapsOfEnumValues = value;
+			return (Builder<
+				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
+				__HAS_arrayOfEnumValuesAndNulls__,
+				__HAS_mapOfEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
@@ -476,8 +797,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -489,8 +812,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfNullsAndEnumValues = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -504,8 +829,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -517,8 +844,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfEnumValuesOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -532,8 +861,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -545,8 +876,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfNullsAndEnumValuesOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -560,8 +893,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -573,8 +908,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfMapsOfEnumValues = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -588,8 +925,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -601,8 +940,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfMapsOfEnumValuesOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -616,8 +957,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
@@ -629,8 +972,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfNullsAndMapsOfEnumValues = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				JsonNumberEnumValueRootTest.__OK__,
@@ -644,8 +989,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -657,8 +1004,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfMapsOfNullsAndEnumValues = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -672,8 +1021,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -685,8 +1036,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.arrayOfNullsAndMapsOfNullsAndEnumValuesOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -700,8 +1053,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -713,8 +1068,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfArraysOfEnumValues = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -728,8 +1085,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -741,8 +1100,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfArraysOfEnumValuesOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -756,8 +1117,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -769,8 +1132,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfNullsAndArraysOfEnumValues = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -784,8 +1149,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -797,8 +1164,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfArraysOfNullsAndEnumValues = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -812,8 +1181,10 @@ public final class JsonNumberEnumValueRootTest {
 		@SuppressWarnings("unchecked")
 		public Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,
@@ -825,8 +1196,10 @@ public final class JsonNumberEnumValueRootTest {
 			this.mapOfNullsAndArraysOfNullsAndEnumValuesOrNull = value;
 			return (Builder<
 				__HAS_arrayOfEnumValues__,
+				__HAS_arrayOfArraysOfEnumValues__,
 				__HAS_arrayOfEnumValuesAndNulls__,
 				__HAS_mapOfEnumValues__,
+				__HAS_mapOfMapsOfEnumValues__,
 				__HAS_mapOfNullsAndEnumValues__,
 				__HAS_arrayOfMapsOfEnumValues__,
 				__HAS_arrayOfNullsAndMapsOfEnumValues__,

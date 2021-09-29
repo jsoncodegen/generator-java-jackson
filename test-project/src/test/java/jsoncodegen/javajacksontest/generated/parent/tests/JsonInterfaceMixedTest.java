@@ -12,11 +12,11 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public final class JsonInterfaceMixedTest {
 
-	private final jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface child;
-	private final jsoncodegen.javajacksontest.generated.parent.tests.JsonInterface local;
-	private final jsoncodegen.javajacksontest.generated.parent.JsonInterface parent;
-	private final jsoncodegen.javajacksontest.generated.JsonInterface root;
-	private final jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface sibling;
+	private jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface child;
+	private jsoncodegen.javajacksontest.generated.parent.tests.JsonInterface local;
+	private jsoncodegen.javajacksontest.generated.parent.JsonInterface parent;
+	private jsoncodegen.javajacksontest.generated.JsonInterface root;
+	private jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface sibling;
 
 	public JsonInterfaceMixedTest(Builder<
 			JsonInterfaceMixedTest.__OK__,
@@ -79,12 +79,61 @@ public final class JsonInterfaceMixedTest {
 			.append("sibling", this.sibling)
 			.toString();
 	}
+	
+	public JsonInterfaceMixedTest clone() {
+		return new JsonInterfaceMixedTest(JsonInterfaceMixedTest.Builder.create()
+				.withChild(this.child)
+				.withLocal(this.local)
+				.withParent(this.parent)
+				.withRoot(this.root)
+				.withSibling(this.sibling)
+		);
+	}
 
-	public jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface getChild() { return this.child; }
-	public jsoncodegen.javajacksontest.generated.parent.tests.JsonInterface getLocal() { return this.local; }
-	public jsoncodegen.javajacksontest.generated.parent.JsonInterface getParent() { return this.parent; }
-	public jsoncodegen.javajacksontest.generated.JsonInterface getRoot() { return this.root; }
-	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface getSibling() { return this.sibling; }
+	public jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface getChild() {
+		return this.child;
+	}
+
+	public void setChild(jsoncodegen.javajacksontest.generated.parent.tests.child.JsonInterface value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.child = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.tests.JsonInterface getLocal() {
+		return this.local;
+	}
+
+	public void setLocal(jsoncodegen.javajacksontest.generated.parent.tests.JsonInterface value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.local = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.JsonInterface getParent() {
+		return this.parent;
+	}
+
+	public void setParent(jsoncodegen.javajacksontest.generated.parent.JsonInterface value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.parent = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.JsonInterface getRoot() {
+		return this.root;
+	}
+
+	public void setRoot(jsoncodegen.javajacksontest.generated.JsonInterface value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.root = value;
+	}
+
+	public jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface getSibling() {
+		return this.sibling;
+	}
+
+	public void setSibling(jsoncodegen.javajacksontest.generated.parent.sibling.JsonInterface value) {
+		Validate.notNull(value, "Argument 'value' must not be null.");
+		this.sibling = value;
+	}
 
 	@JsonCreator
 	public static JsonInterfaceMixedTest jacksonHelper(

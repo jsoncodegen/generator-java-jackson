@@ -13,10 +13,11 @@ export function interfaceTemplate({
 	builderWithCalls,
 	missingClasses,
 	builderGenerics,
-	getters,
+	gettersAndSetters,
 	builderFields,
 	builderGenericsAllMissing,
 	builderWithMethods,
+	cloneWithCalls,
 }: {
 	packageName: string
 	interfaceName: string
@@ -32,10 +33,11 @@ export function interfaceTemplate({
 	builderWithCalls: string
 	missingClasses: string
 	builderGenerics: string
-	getters: string
+	gettersAndSetters: string
 	builderFields: string
 	builderGenericsAllMissing: string
 	builderWithMethods: string
+	cloneWithCalls: string
 }) {
 	return `package ${packageName};
 
@@ -86,8 +88,14 @@ ${equalsAppends}
 ${toStringAppends}
 			.toString();
 	}
+	
+	public ${interfaceName} clone() {
+		return new ${interfaceName}(${interfaceName}.Builder.create()
+${cloneWithCalls}
+		);
+	}
 
-${getters}
+${gettersAndSetters}
 
 	@JsonCreator
 	public static ${interfaceName} jacksonHelper(
