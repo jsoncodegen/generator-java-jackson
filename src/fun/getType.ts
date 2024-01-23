@@ -1,5 +1,5 @@
 import { TFieldType } from 'jsoncodegen-types-for-generator'
-import { makePackageName } from './makePackageName'
+import { makePackageName } from './makePackageName.js'
 
 export function getType(
 	rootPackageName: string[],
@@ -16,7 +16,7 @@ export function getType(
 					return 'String'
 				default:
 					throw new Error(
-						`[q15wo3] Unknown primitive value: ${fieldType.name}`,
+						`[q15wo3] Unknown primitive value: ${(fieldType as any).name}`,
 					)
 			}
 		case 'InterfaceReference':
@@ -25,18 +25,12 @@ export function getType(
 		case 'NumberEnumValueReference':
 		case 'StringEnumValueReference':
 			return (
-				makePackageName(
-					rootPackageName,
-					fieldType.absoluteDirectoryPath,
-				) +
+				makePackageName(rootPackageName, fieldType.absoluteDirectoryPath) +
 				'.' +
 				fieldType.name
 			)
 		case 'Array':
-			return `java.util.List<${getType(
-				rootPackageName,
-				fieldType.fieldType,
-			)}>`
+			return `java.util.List<${getType(rootPackageName, fieldType.fieldType)}>`
 		case 'Map':
 			return `java.util.Map<String, ${getType(
 				rootPackageName,

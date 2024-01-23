@@ -1,13 +1,13 @@
 import { IGenerator, IGeneratorResult } from 'jsoncodegen-types-for-generator'
-import { generateInterface } from './fun/generateInterface'
-import { generateNumberEnum } from './fun/generateNumberEnum'
-import { generateStringEnum } from './fun/generateStringEnum'
+import { generateInterface } from './fun/generateInterface.js'
+import { generateNumberEnum } from './fun/generateNumberEnum.js'
+import { generateStringEnum } from './fun/generateStringEnum.js'
 
 export interface IConfig {
 	package?: string
 }
 
-const generator: IGenerator = {
+export const generator: IGenerator = {
 	async generate(config: IConfig, namedTypesById) {
 		const rootPackageName =
 			config.package != null ? config.package.split('.') : []
@@ -46,5 +46,3 @@ const generator: IGenerator = {
 		return result
 	},
 }
-
-module.exports = generator

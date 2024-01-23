@@ -59,8 +59,8 @@ jsoncodegen --generator java-jackson --config jsoncodegen-generator-java-jackson
 **jsoncodegen-generator-java-jackson.config.js**
 
 ```js
-module.exports = {
-  package: 'com.example'
+export default {
+	package: 'com.example',
 }
 ```
 
@@ -73,5 +73,7 @@ The name of the target package. All generated classes will be in this package. E
 MIT
 
 ## History
+
+1.2.0 require → import
 
 1.0.0 Initial version.

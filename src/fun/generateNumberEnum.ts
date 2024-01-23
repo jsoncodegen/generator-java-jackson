@@ -1,8 +1,8 @@
 import { IGeneratorResult, INumberEnum } from 'jsoncodegen-types-for-generator'
-import { numberEnumTemplate } from '../template/numberEnumTemplate'
-import { makeComment } from './makeComment'
-import { makeFilePath } from './makeFilePath'
-import { makePackageName } from './makePackageName'
+import { numberEnumTemplate } from '../template/numberEnumTemplate.js'
+import { makeComment } from './makeComment.js'
+import { makeFilePath } from './makeFilePath.js'
+import { makePackageName } from './makePackageName.js'
 
 export async function generateNumberEnum({
 	rootPackageName,
@@ -14,7 +14,7 @@ export async function generateNumberEnum({
 	const result: IGeneratorResult[] = []
 	const { values, directoryPath, name, description } = info
 	const valuesString = values
-		.map(value => {
+		.map((value) => {
 			const comment = makeComment({
 				text: value.description,
 				indent: '\t',

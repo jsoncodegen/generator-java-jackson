@@ -1,4 +1,4 @@
-import { reservedKeywords } from '../reservedKeywords'
+import { reservedKeywords } from '../reservedKeywords.js'
 
 export function makePackageName(rootPackageName: string[], dir: string[]) {
 	const path = [...rootPackageName, ...dir].filter(Boolean)
