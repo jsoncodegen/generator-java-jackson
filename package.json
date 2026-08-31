@@ -2,7 +2,7 @@
 	"type": "module",
 	"name": "jsoncodegen-generator-java-jackson",
 	"description": "jsoncodegen JSON to Java code generator for Jackson.",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"author": {
 		"name": "András Parditka"
 	},
@@ -10,7 +10,7 @@
 	"main": "./dist/index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jsoncodegen/generator-java-jackson.git"
+		"url": "git+https://github.com/jsoncodegen/generator-java-jackson.git"
 	},
 	"homepage": "https://github.com/jsoncodegen/generator-java-jackson",
 	"bugs": {
@@ -19,7 +19,7 @@
 	"devDependencies": {
 		"@types/node": "^20.11.5",
 		"@types/rimraf": "^3.0.2",
-		"jsoncodegen": "../jsoncodegen-cli",
+		"jsoncodegen": "^1.1.1",
 		"jsoncodegen-test-json": "^1.1.0",
 		"jsoncodegen-types-for-generator": "^1.0.1",
 		"rimraf": "^5.0.5",
